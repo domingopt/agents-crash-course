@@ -1,0 +1,16 @@
+{
+  "learnerName": "",
+  "courseTitle": "Agents for Your Travel Business",
+  "courseShort": "Agents crash course",
+  "tagline": "A crash course in letting AI take the busywork, so your evenings and weekends go further.",
+  "lastChecked": "25 October 2026",
+  "businessDefaults": {
+    "agencyName": "",
+    "hostAgency": "",
+    "networkCompany": "",
+    "specialisms": "family holidays, all-inclusive breaks, cruises and special-occasion trips",
+    "signOff": "Warm wishes,\n{name}",
+    "tone": "warm"
+  },
+  "footerNote": "Made for a one-to-one crash course. Nothing you type here leaves your browser: there is no tracking, no account and no server."
+}

@@ -1,0 +1,67 @@
+{
+  "intro": "Every agent, on every platform, is built from the same six parts. Learn these once and every platform's settings page will make sense. Tap each part to see what it is.",
+  "saves": "When an agent goes wrong, it's almost always one of these six parts that needs a tweak. Knowing them means you can fix it in minutes rather than giving up.",
+  "centre": { "title": "The AI model", "body": "The 'brain' in the middle (Claude, ChatGPT and so on). On its own it's just clever with words. The six parts around it turn it into something useful for your business." },
+  "parts": [
+    {
+      "id": "instructions",
+      "name": "Instructions",
+      "icon": "clipboard",
+      "metaphor": "The briefing",
+      "plain": "A standing briefing you write once: who the agent works for, what its job is, how to sound and what it must never do. It's like the handover notes you'd give a new assistant.",
+      "travel": "\"You work for {name}, an independent travel agent specialising in family holidays. You draft replies to new holiday enquiries in a warm, British tone. Never quote a price as final.\"",
+      "tip": "Most disappointing results come from vague instructions. Be specific about what 'good' looks like, and give an example.",
+      "more": "Instructions are just plain text, which makes them the most portable part of an agent. You can copy the same instructions from Claude to ChatGPT to Zapier. The Agent Builder in this course writes them for you."
+    },
+    {
+      "id": "tools",
+      "name": "Tools and connections",
+      "icon": "plug",
+      "metaphor": "The hands",
+      "plain": "What the agent is allowed to use: search the web, read your inbox, create a draft, look in Google Drive, add a row to a spreadsheet. You connect these with a 'sign in with…' button. These are [[connectors|connector]].",
+      "travel": "Read new emails labelled 'Enquiry', search the web for hotels, save a reply as a Gmail draft.",
+      "tip": "Give the fewest tools that get the job done. An enquiry agent needs to read and draft emails, not to delete them or send them.",
+      "more": "Each tool is a permission. You can see and remove connected accounts in the platform's settings at any time, and in your Google or Microsoft account's security page."
+    },
+    {
+      "id": "knowledge",
+      "name": "Knowledge",
+      "icon": "book",
+      "metaphor": "The reference folder",
+      "plain": "Documents you give the agent to work from, such as your FAQs, preferred suppliers, price guides and onboarding pack, so it answers from your material instead of guessing.",
+      "travel": "Your 'Who I recommend' supplier list, your booking terms, your FAQ on deposits and balances.",
+      "tip": "Keep knowledge files short, current and dated. An out-of-date price list in the folder will produce out-of-date answers.",
+      "more": "Never put client passports, health details or payment info in knowledge files. Use general documents only. See the Safety module."
+    },
+    {
+      "id": "memory",
+      "name": "Memory",
+      "icon": "notebook",
+      "metaphor": "The notebook",
+      "plain": "What the agent remembers between conversations: your preferences, decisions you've made, how you like things laid out.",
+      "travel": "It remembers you always want three options, not five, and that you prefer to mention ATOL protection in quotes.",
+      "tip": "Memory is handy but can pick up the wrong thing. Most platforms let you view and delete what's remembered, so have a look once a month.",
+      "more": "Memory is different from knowledge: knowledge is the folder you hand over on purpose; memory is notes the agent takes as it goes. Some platforms let you switch memory off per project."
+    },
+    {
+      "id": "triggers",
+      "name": "Triggers and schedules",
+      "icon": "clock",
+      "metaphor": "The alarm clock",
+      "plain": "What sets the agent off: you pressing go, a set time ('every Monday at 7am') or something arriving ('when a new enquiry email comes in').",
+      "travel": "Every Sunday at 6pm, draft next week's social posts. Every weekday at 7am, check for departures in 7 days and draft countdown emails.",
+      "tip": "Start with 'on demand' (you press go). Move to a schedule once you trust the results.",
+      "more": "Not every platform can react to things arriving. Some can only run on a clock. The platform comparison shows which can do what."
+    },
+    {
+      "id": "guardrails",
+      "name": "Guardrails and approval",
+      "icon": "shield",
+      "metaphor": "Passport control",
+      "plain": "The rules and checkpoints that keep you safe: 'only draft, never send', 'always flag prices as needing a check', 'never mention earnings'. Plus the moment it stops and waits for your OK. That's the [[human in the loop|hitl]].",
+      "travel": "\"Save replies as drafts only. If the client mentions health, a complaint or a refund, don't draft. Flag it for {name}.\"",
+      "tip": "If you only remember one thing: anything going to a client or the public gets your eyes on it first.",
+      "more": "Guardrails go in two places: written into the instructions, and built into the setup (for example, only connecting 'draft' permission, not 'send'). Belt and braces."
+    }
+  ]
+}

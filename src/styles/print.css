@@ -1,0 +1,87 @@
+@media print {
+  :root {
+    --paper: #fff;
+    --card: #fff;
+    --paper-2: #f6f2ea;
+    --ink: #000;
+    --ink-2: #333;
+    --shadow: none;
+  }
+  body {
+    background: #fff;
+    font-size: 11pt;
+  }
+  .site-header,
+  .site-footer,
+  .no-print,
+  .module-footer,
+  .wizard-steps,
+  .wizard-nav,
+  .skip-link,
+  .privacy-line,
+  .copy-head button,
+  .drawer,
+  .drawer-backdrop,
+  .toast {
+    display: none !important;
+  }
+  .print-only {
+    display: block;
+  }
+  main {
+    padding: 0;
+  }
+  .wizard-panel,
+  .card,
+  .ticket,
+  .cheatsheet {
+    box-shadow: none;
+    border-color: #ccc;
+  }
+  .copy-block pre {
+    max-height: none;
+    overflow: visible;
+    padding-top: 12px;
+    font-size: 9pt;
+  }
+  .copy-block .copy-head {
+    position: static;
+    padding: 8px 12px 0;
+  }
+  .print-pack {
+    page-break-after: always;
+  }
+  .print-pack pre {
+    white-space: pre-wrap;
+    font-family: var(--font-mono);
+    font-size: 9pt;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .module-hero .saves,
+  .module-hero .lede {
+    display: none;
+  }
+  /* The cheat sheet fits one A4 page. */
+  .cheatsheet {
+    border: 0;
+    padding: 0;
+  }
+  .cs-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px;
+  }
+  .cs-box {
+    break-inside: avoid;
+    padding: 8px 10px;
+  }
+  .cs-box ul {
+    font-size: 9.5pt;
+  }
+  a {
+    color: #000;
+  }
+  @page {
+    margin: 14mm;
+  }
+}

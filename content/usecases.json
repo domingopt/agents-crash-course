@@ -1,0 +1,262 @@
+{
+  "intro": "Here are ready-made ideas, grouped by part of the business. Each card shows what starts it, what the agent does, what you approve, a rough time saving and how tricky it is to set up. Tap 'Build this' to take any idea into the Agent Builder.",
+  "saves": "You don't need to invent agents from scratch. Pick one card that matches your most annoying weekly job and start there.",
+  "timeNote": "Time savings are illustrative estimates for a small, part-time business. Your mileage will vary.",
+  "categories": [
+    {
+      "id": "travel",
+      "label": "Travel"
+    },
+    {
+      "id": "network",
+      "label": "Network marketing"
+    },
+    {
+      "id": "admin",
+      "label": "Admin"
+    }
+  ],
+  "difficulty": {
+    "1": "Starter: under 15 minutes to set up",
+    "2": "Moderate: about 30 to 60 minutes",
+    "3": "Advanced: needs an automation tool"
+  },
+  "items": [
+    {
+      "id": "enquiry",
+      "category": "travel",
+      "title": "Enquiry triage and first replies",
+      "trigger": "A new enquiry email arrives (or you paste one in)",
+      "does": [
+        "Pulls out the brief: dates, who's travelling, budget, wishes",
+        "Lists what's missing",
+        "Drafts a warm first reply asking the right questions"
+      ],
+      "approve": "You read the draft, tweak it and press send",
+      "saved": "1 to 2 hrs a week",
+      "difficulty": 1,
+      "template": "enquiry",
+      "connects": [
+        "email"
+      ],
+      "weekTask": "enquiries"
+    },
+    {
+      "id": "itinerary",
+      "category": "travel",
+      "title": "Itinerary first drafts",
+      "trigger": "You paste in a client brief",
+      "does": [
+        "Suggests a day-by-day outline",
+        "Proposes 2 to 3 hotel or resort options to investigate",
+        "Notes what to verify with suppliers"
+      ],
+      "approve": "You check every hotel, price and transfer before it goes near the client",
+      "saved": "1 to 3 hrs per complex trip",
+      "difficulty": 1,
+      "connects": [
+        "web"
+      ],
+      "weekTask": "quotes"
+    },
+    {
+      "id": "countdown",
+      "category": "travel",
+      "title": "Trip countdown emails",
+      "trigger": "Every weekday morning (schedule)",
+      "does": [
+        "Checks your calendar or departures list for trips 7 days out",
+        "Drafts a friendly reminder: documents, weather outlook, packing tips"
+      ],
+      "approve": "You check entry and document advice, then send",
+      "saved": "30 to 60 mins a week",
+      "difficulty": 2,
+      "connects": [
+        "email",
+        "calendar",
+        "web"
+      ],
+      "weekTask": "clientcomms"
+    },
+    {
+      "id": "digest",
+      "category": "travel",
+      "title": "Supplier and promo digest",
+      "trigger": "Every Friday (schedule)",
+      "does": [
+        "Reads the week's supplier emails and newsletters",
+        "Summarises new offers, deadlines and fam trips",
+        "Flags anything relevant to your current clients"
+      ],
+      "approve": "Nothing to approve. It's just for you",
+      "saved": "45 mins a week",
+      "difficulty": 1,
+      "connects": [
+        "email"
+      ],
+      "weekTask": "learning"
+    },
+    {
+      "id": "reviews",
+      "category": "travel",
+      "title": "Post-trip review requests",
+      "trigger": "Clients who returned 3 days ago (schedule)",
+      "does": [
+        "Drafts a personal welcome-home note",
+        "Asks for a review or testimonial, with the link"
+      ],
+      "approve": "You personalise and send. Only to clients happy to hear from you",
+      "saved": "20 to 30 mins a week",
+      "difficulty": 2,
+      "connects": [
+        "email",
+        "calendar"
+      ],
+      "weekTask": "clientcomms"
+    },
+    {
+      "id": "socialbatch",
+      "category": "travel",
+      "title": "Social content batching",
+      "trigger": "Sunday evening, or when you upload photos",
+      "does": [
+        "Turns your trip photos and current offers into a week of posts",
+        "Writes captions and suggests hashtags",
+        "Can create designs if connected to Canva"
+      ],
+      "approve": "You check facts and offers, then post yourself",
+      "saved": "1 to 2 hrs a week",
+      "difficulty": 1,
+      "connects": [
+        "files",
+        "canva"
+      ],
+      "weekTask": "social"
+    },
+    {
+      "id": "contentcal",
+      "category": "network",
+      "title": "Weekly content calendar",
+      "trigger": "Every Sunday at 6pm (schedule)",
+      "does": [
+        "Plans 7 days of posts mixing travel inspiration, tips and opportunity posts",
+        "Drafts captions within the rules: no income claims"
+      ],
+      "approve": "You review the plan and schedule the posts",
+      "saved": "1 to 2 hrs a week",
+      "difficulty": 1,
+      "template": "content",
+      "connects": [
+        "files"
+      ],
+      "weekTask": "social"
+    },
+    {
+      "id": "followups",
+      "category": "network",
+      "title": "Lead follow-up reminders",
+      "trigger": "Every Monday and Thursday (schedule)",
+      "does": [
+        "Checks your leads list for anyone not contacted in 10+ days",
+        "Drafts a short, genuine follow-up message for each"
+      ],
+      "approve": "You copy, personalise and send from your own WhatsApp or DMs",
+      "saved": "45 mins a week",
+      "difficulty": 2,
+      "connects": [
+        "sheet"
+      ],
+      "weekTask": "team"
+    },
+    {
+      "id": "recruitfaq",
+      "category": "network",
+      "title": "New recruit onboarding assistant",
+      "trigger": "A team member asks a question (you share the assistant or forward the question)",
+      "does": [
+        "Answers only from your onboarding pack and FAQ",
+        "Points to the right training or document",
+        "Says 'ask {name}' when unsure"
+      ],
+      "approve": "Review its answers weekly at first. No earnings talk",
+      "saved": "1 hr a week as your team grows",
+      "difficulty": 2,
+      "connects": [
+        "files"
+      ],
+      "weekTask": "team"
+    },
+    {
+      "id": "teamsummary",
+      "category": "network",
+      "title": "Weekly team activity summary",
+      "trigger": "Every Sunday (schedule)",
+      "does": [
+        "Reads your team tracker spreadsheet",
+        "Summarises who's active, who's gone quiet, and who to congratulate"
+      ],
+      "approve": "Just for you. Use it to decide who to call",
+      "saved": "30 to 45 mins a week",
+      "difficulty": 2,
+      "connects": [
+        "sheet"
+      ],
+      "weekTask": "team"
+    },
+    {
+      "id": "inbox",
+      "category": "admin",
+      "title": "Inbox triage",
+      "trigger": "Twice a day (schedule)",
+      "does": [
+        "Sorts new email into: needs you, can wait, newsletters, receipts",
+        "Drafts replies for simple ones"
+      ],
+      "approve": "You skim the 'needs you' list and check drafts",
+      "saved": "1 to 2 hrs a week",
+      "difficulty": 2,
+      "connects": [
+        "email"
+      ],
+      "weekTask": "admin"
+    },
+    {
+      "id": "briefing",
+      "category": "admin",
+      "title": "Business in 15 minutes",
+      "trigger": "Every Monday at 7am (schedule)",
+      "does": [
+        "Summarises last week's emails and what's waiting on you",
+        "Lists upcoming departures and deadlines",
+        "Suggests your top 3 priorities for the week"
+      ],
+      "approve": "Just for you. Read it with your coffee",
+      "saved": "1 hr a week, plus peace of mind",
+      "difficulty": 1,
+      "template": "briefing",
+      "connects": [
+        "email",
+        "calendar"
+      ],
+      "weekTask": "admin"
+    },
+    {
+      "id": "expenses",
+      "category": "admin",
+      "title": "Receipts and expenses tidy-up",
+      "trigger": "First of each month (schedule)",
+      "does": [
+        "Finds receipt emails from last month",
+        "Lists them in a spreadsheet by date, supplier, amount and category"
+      ],
+      "approve": "Glance at totals before your tax return",
+      "saved": "1 hr a month",
+      "difficulty": 2,
+      "connects": [
+        "email",
+        "sheet"
+      ],
+      "weekTask": "admin"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "intro": "Agents are brilliant at some things and genuinely risky at others. Sort these real tasks into three piles: drag each card, or tap it and choose a pile. You'll see why after each one.",
+  "saves": "Spotting a good candidate task is the single most useful skill here. The right first task saves hours; the wrong one creates a mess you have to clean up.",
+  "bins": [
+    { "id": "great", "label": "Great fit", "hint": "Hand it over", "colour": "green" },
+    { "id": "check", "label": "Needs a human check", "hint": "Agent drafts, you approve", "colour": "amber" },
+    { "id": "human", "label": "Keep it human", "hint": "You do this one", "colour": "red" }
+  ],
+  "tasks": [
+    { "id": "digest", "text": "Summarise 40 unread supplier emails into a 5-bullet digest", "answer": "great", "why": "Reading and summarising is where AI shines, and it's just for you, so a small mistake costs little." },
+    { "id": "leads", "text": "Remind me which leads haven't heard from me in 2 weeks", "answer": "great", "why": "Spotting gaps in a list and reminding you is low-risk and saves real head space." },
+    { "id": "receipts", "text": "Sort this month's receipts into a spreadsheet by category", "answer": "great", "why": "Tidy, repetitive and private. Do a quick glance at the totals before your tax return." },
+    { "id": "teamsummary", "text": "Write a weekly summary of my team's activity from our tracker", "answer": "great", "why": "An internal summary for you. Perfect agent work." },
+    { "id": "firstreply", "text": "Draft the first reply to a new holiday enquiry", "answer": "check", "why": "A big time-saver, but it goes to a client. Read it, fix anything off and send it yourself." },
+    { "id": "itinerary", "text": "Turn a client's brief into a first-draft itinerary", "answer": "check", "why": "Great as a starting point, but AI can [[hallucinate|hallucination]] hotels or get transfer times wrong, and its prices may be out of date. Check everything against the supplier." },
+    { "id": "captions", "text": "Write a week of Instagram captions from my trip photos", "answer": "check", "why": "It's public and it's your brand. Check facts, offers and tone, and make sure any offer is accurate and still available." },
+    { "id": "countdown", "text": "Prepare 'your holiday is in 7 days' emails with documents, weather and packing tips", "answer": "check", "why": "Brilliant once you trust it. Check each one at first, especially anything about documents or entry rules." },
+    { "id": "recruitfaq", "text": "Answer new recruits' questions using my onboarding pack", "answer": "check", "why": "Works well when it answers only from your pack. Review its answers for the first few weeks, and make sure it never strays into earnings promises." },
+    { "id": "visa", "text": "Tell a client whether they need a visa for their trip", "answer": "human", "why": "Entry rules change and AI often gets them wrong. Always confirm on the official source ([[FCDO travel advice|fcdo]] on GOV.UK) and the client's own circumstances. An agent can help find the page, but the advice is yours." },
+    { "id": "price", "text": "Quote a final price to a client", "answer": "human", "why": "AI can't see live availability unless connected to your booking system, and it can invent or mis-read prices. Final prices come from the supplier, through you." },
+    { "id": "complaint", "text": "Respond to a client whose holiday went wrong", "answer": "human", "why": "This needs empathy, judgement and possibly your host agency's complaints process. Use AI to tidy your wording, perhaps, but not to lead." },
+    { "id": "earnings", "text": "Write a post about how much I've earned from the business", "answer": "human", "why": "Income claims are a red line under advertising rules ([[ASA / CAP Code|asa]]) and the [[Direct Selling Association|dsa]] code. Don't let an agent anywhere near these." },
+    { "id": "passport", "text": "Copy a family's passport details into a booking form", "answer": "human", "why": "That's sensitive personal data. Keep it out of AI tools and use your booking system directly. See the Safety module on [[UK GDPR|gdpr]]." }
+  ],
+  "summary": "The pattern: AI is great when the output is for you, or is a draft. It needs your check when it goes to a client or the public. And anything involving money, the law, sensitive data or someone's feelings stays with you.",
+  "more": [
+    { "title": "Why does AI make things up?", "body": "An AI model writes by predicting likely words. Most of the time likely is also true, but when it doesn't know, it can produce something that sounds right and isn't. That's called a hallucination. Giving it your own documents and letting it search the web reduces this a lot, but doesn't eliminate it." },
+    { "title": "Why are prices and availability a special problem?", "body": "Even an agent that can search the web sees public pages, which may be cached, out of date or missing your trade rates. Unless it's connected directly to your booking system, treat any price or availability it gives as 'roughly in this range, must check'." }
+  ]
+}

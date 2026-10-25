@@ -1,0 +1,363 @@
+{
+  "intro": "There's no single 'best' platform: there's the best fit for your email, budget and appetite for setting things up. Here are the five realistic options, plus two more technical alternatives, compared on the same criteria. Every option has real downsides, and they're listed.",
+  "saves": "Choosing well up front saves you from rebuilding everything in three months. Choosing badly is recoverable too: your instructions are plain text and move with you.",
+  "lastChecked": "25 October 2026",
+  "methodNote": "Prices and features change often, sometimes monthly. We checked the vendors' own pages where we could reach them and reputable reviews where we couldn't, and noted where sources disagreed. Always confirm the price at checkout before you subscribe.",
+  "fxNote": "Several platforms charge in US dollars or euros. Pound figures are approximate, converted at roughly £0.75 to the dollar and £0.86 to the euro, and VAT may be added at checkout.",
+  "connectLabels": {
+    "gmail": "Gmail",
+    "outlook": "Outlook.com (personal)",
+    "whatsapp": "WhatsApp",
+    "social": "Instagram / Facebook",
+    "sheets": "Google Sheets",
+    "canva": "Canva"
+  },
+  "connectValues": {
+    "yes": "Yes",
+    "partial": "Partly",
+    "no": "No",
+    "unverified": "Unconfirmed"
+  },
+  "whatsappNote": "Honest news on WhatsApp: none of these options can work inside your personal WhatsApp. Zapier, Make and n8n can connect to the separate WhatsApp Business Platform, but that needs a Meta business setup, a registered business number and recipients who've opted in. For most people the practical answer is: the agent drafts the message, you copy it into WhatsApp and send it yourself. That's also the safest approach under the marketing rules.",
+  "platforms": [
+    {
+      "id": "claude",
+      "name": "Claude",
+      "plan": "Pro plan",
+      "tier": "main",
+      "kind": "AI assistant",
+      "oneLiner": "A writing-strong AI assistant with Projects, connectors to Gmail, Google Drive and Canva, and scheduled tasks that run in the cloud.",
+      "cost": { "label": "About £15–18 a month", "low": 15, "high": 18, "free": "Free plan for trying it out (no scheduled tasks)", "note": "US$20 a month, or US$17 a month billed yearly (US$200). Billed in dollars; VAT may be added." },
+      "setup": 2,
+      "setupText": "Low: create a Project, paste instructions, connect Gmail.",
+      "ongoing": 2,
+      "ongoingText": "Low: read the drafts, tweak instructions now and then.",
+      "connects": {
+        "gmail": { "v": "yes", "note": "Reads, searches and creates drafts. Plan on drafts rather than sending." },
+        "outlook": { "v": "no", "note": "The Microsoft 365 connector needs a business Microsoft account. Personal @outlook.com or @hotmail.com addresses can't connect." },
+        "whatsapp": { "v": "no", "note": "Writes messages for you to paste." },
+        "social": { "v": "no", "note": "Writes posts and captions for you to post." },
+        "sheets": { "v": "partial", "note": "The Google Drive connector reads your files; editing a spreadsheet directly is more limited." },
+        "canva": { "v": "yes", "note": "Canva connector available in the connectors directory." }
+      },
+      "background": { "rating": 4, "text": "Good. Since 6 October 2026, new scheduled tasks run in Anthropic's cloud, so your laptop can be closed. They run on a clock (e.g. Mondays 7am), not the moment an email arrives." },
+      "data": "US company. On personal plans you choose in Settings → Privacy whether your chats help train models; if you opt out, chats are kept for about 30 days. No UK-only data storage on personal plans.",
+      "lockin": { "level": "Low", "text": "Instructions are plain text you can copy to any other platform." },
+      "goodIf": "you use Gmail, want one tool for writing, research and scheduled briefings, and are happy to copy-paste social posts and WhatsApp messages yourself.",
+      "pros": [
+        "Excellent at writing in a natural British tone",
+        "Projects keep each agent briefed with its own instructions and files",
+        "Scheduled tasks keep running with your laptop closed",
+        "Gmail drafting (not sending) is a built-in safety net"
+      ],
+      "cons": [
+        "Can't connect a personal Outlook.com or Hotmail inbox",
+        "No WhatsApp, Instagram or Facebook connection",
+        "Usage limits: on a heavy day you can hit a cap and wait a few hours",
+        "Can't react the instant an email arrives; it checks on a schedule",
+        "Features get renamed and reorganised often"
+      ],
+      "sources": [
+        { "label": "Claude pricing (claude.com)", "url": "https://claude.com/pricing" },
+        { "label": "Claude help: Cowork on web, desktop and mobile", "url": "https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile" },
+        { "label": "Claude help: Microsoft 365 connector", "url": "https://support.claude.com/en/articles/12542951" },
+        { "label": "Augustova: Claude pricing UK", "url": "https://www.augustova.co.uk/guides/claude-pricing-uk" }
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "plan": "Plus plan",
+      "tier": "main",
+      "kind": "AI assistant",
+      "oneLiner": "The best-known AI assistant, with custom GPTs, Projects, agent mode, image creation and scheduled tasks, including tasks triggered by Gmail.",
+      "cost": { "label": "About £19–20 a month", "low": 19, "high": 20, "free": "Free and cheaper 'Go' plans exist, but without Gmail-triggered tasks", "note": "US$20 list price; UK checkout reported at about £16 + 20% VAT." },
+      "setup": 2,
+      "setupText": "Low: create a custom GPT or Project, paste instructions, connect Gmail.",
+      "ongoing": 2,
+      "ongoingText": "Low: check drafts and scheduled results.",
+      "connects": {
+        "gmail": { "v": "yes", "note": "Searches and reads email; Plus can start tasks from Gmail activity. Sending varies, so plan on drafts." },
+        "outlook": { "v": "partial", "note": "Outlook connector is aimed mainly at business plans; support on personal Plus is limited." },
+        "whatsapp": { "v": "no", "note": "Writes messages for you to paste." },
+        "social": { "v": "no", "note": "Writes posts and creates images for you to post." },
+        "sheets": { "v": "partial", "note": "Reads files from Google Drive." },
+        "canva": { "v": "yes", "note": "Canva app works on Plus with a free Canva account." }
+      },
+      "background": { "rating": 3, "text": "Fair. Scheduled tasks and Gmail-triggered tasks are available on Plus. Some users report runs that can't reach connected apps, so check results at first." },
+      "data": "US company. Chats can be used to train models unless you switch off 'Improve the model for everyone' in Settings → Data controls.",
+      "lockin": { "level": "Medium", "text": "Custom GPTs live inside ChatGPT, but you can copy the instructions out." },
+      "goodIf": "you already use ChatGPT, use Gmail, and want tasks that start when an enquiry email arrives, or an assistant you can share with your team.",
+      "pros": [
+        "Familiar, with endless tutorials and YouTube help",
+        "Custom GPTs are easy to share with team members (great for a recruit FAQ)",
+        "Gmail-triggered tasks on Plus",
+        "Built-in image creation for social posts"
+      ],
+      "cons": [
+        "Model training on your chats is on by default; switch it off",
+        "Limited support for personal Outlook.com",
+        "No WhatsApp, Instagram or Facebook connection",
+        "Plans, features and names change frequently",
+        "Usage caps on the most capable models"
+      ],
+      "sources": [
+        { "label": "OpenAI help: connectors in ChatGPT", "url": "https://help.openai.com/en/articles/10291617-connectors-in-chatgpt" },
+        { "label": "Profee: ChatGPT pricing UK", "url": "https://www.profee.com/articles/chatgpt-pricing-and-subscription-options-in-the-uk" },
+        { "label": "AIToolsReview: ChatGPT pricing (Oct 2026)", "url": "https://aitoolsreview.co.uk/insights/chatgpt-pricing" },
+        { "label": "Usecarly: scheduled tasks and connectors", "url": "https://www.usecarly.com/blog/chatgpt-scheduled-task-connector-unavailable/" }
+      ]
+    },
+    {
+      "id": "copilot",
+      "name": "Microsoft Copilot",
+      "plan": "Microsoft 365 Personal",
+      "tier": "main",
+      "kind": "AI in Office apps",
+      "oneLiner": "Copilot built into Word, Excel and Outlook on a personal Microsoft 365 subscription. Helpful for writing, but not really an agent platform.",
+      "cost": { "label": "About £8.49 a month", "low": 8.5, "high": 8.5, "free": "Free Copilot app with basic features", "note": "£8.49/month or £84.99/year as reported by Which? (July 2025); not re-confirmed. Includes Office apps and storage. Copilot use is limited by monthly AI credits." },
+      "setup": 1,
+      "setupText": "Very low if you already have Microsoft 365.",
+      "ongoing": 3,
+      "ongoingText": "Medium: no schedules, so you start every job yourself.",
+      "connects": {
+        "gmail": { "v": "unverified", "note": "Copilot features are built around Outlook.com accounts." },
+        "outlook": { "v": "yes", "note": "Built into Outlook for personal accounts." },
+        "whatsapp": { "v": "no", "note": "" },
+        "social": { "v": "no", "note": "" },
+        "sheets": { "v": "partial", "note": "Works in Excel, not Google Sheets." },
+        "canva": { "v": "no", "note": "Microsoft Designer instead." }
+      },
+      "background": { "rating": 1, "text": "Poor. No scheduled or background agents on personal plans: you prompt it each time. Proper agent-building (Copilot Studio) is priced for businesses." },
+      "data": "Microsoft personal account. The real risk is mixing it up with your NHS Microsoft account, which may also have Copilot.",
+      "lockin": { "level": "Medium", "text": "Your documents stay yours; prompts are easy to copy elsewhere." },
+      "goodIf": "you already pay for Microsoft 365 Personal and mainly want writing help in Word and Outlook. Use it alongside a proper agent platform, not instead of one.",
+      "pros": [
+        "You may already be paying for it",
+        "Works inside Word, Excel and Outlook",
+        "Familiar interface"
+      ],
+      "cons": [
+        "Very easy to confuse with your NHS work account. A serious risk for you",
+        "Limited monthly AI credits on personal plans",
+        "No scheduled tasks or background agents",
+        "Real agent-building tools are priced for businesses"
+      ],
+      "warning": "Never use your NHS Microsoft account, work device or NHS Copilot for the business.",
+      "sources": [
+        { "label": "Which?: Microsoft 365 price rises", "url": "https://www.which.co.uk/news/article/how-to-avoid-microsoft-365-price-rises-aGNYY5O92as9" },
+        { "label": "Licensing School: Copilot in Personal and Family", "url": "https://www.licensingschool.co.uk/licensing-blog/?p=120733" }
+      ]
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "plan": "Zaps + Agents",
+      "tier": "main",
+      "kind": "Automation with AI",
+      "oneLiner": "The best-known automation tool. It connects thousands of apps and now includes AI Agents that can make decisions along the way.",
+      "cost": { "label": "Free to start; about £15–60 a month as you grow", "low": 0, "high": 60, "free": "Free plan for simple Zaps; Agents free for 400 activities a month", "note": "Professional Zaps about US$20–30 a month; Agents Pro US$50 a month (or about US$33 billed yearly). Agents are metered separately in 'activities'." },
+      "setup": 4,
+      "setupText": "Higher: you build step-by-step workflows and test them.",
+      "ongoing": 2,
+      "ongoingText": "Low once working; check now and then that nothing has broken.",
+      "connects": {
+        "gmail": { "v": "yes", "note": "" },
+        "outlook": { "v": "yes", "note": "Works with Outlook.com." },
+        "whatsapp": { "v": "partial", "note": "WhatsApp Business Platform only: needs Meta Business Manager, a registered business number and a paid Zapier plan." },
+        "social": { "v": "partial", "note": "Facebook Pages and Instagram Business accounts (e.g. posting, lead forms), not personal DMs." },
+        "sheets": { "v": "yes", "note": "" },
+        "canva": { "v": "unverified", "note": "Check the specific action you need." }
+      },
+      "background": { "rating": 5, "text": "Excellent. Built to run all the time and react the moment something arrives." },
+      "data": "US company; your data passes through Zapier for each step. Check its data processing terms before connecting client data.",
+      "lockin": { "level": "High", "text": "Workflows and agents would need rebuilding by hand elsewhere." },
+      "goodIf": "you want things to happen automatically the moment something arrives, or need to join up lots of apps, including Outlook.com.",
+      "pros": [
+        "Connects to more apps than anything else, including Outlook.com",
+        "Reacts instantly to new emails, forms and spreadsheet rows",
+        "Free tier to experiment with",
+        "Mix fixed workflows with AI steps"
+      ],
+      "cons": [
+        "Costs climb as you use more, and 'activities' are hard to predict",
+        "Feels like building, not chatting, so there's more to learn",
+        "WhatsApp setup via Meta is genuinely fiddly",
+        "Writing quality depends on your instructions and settings"
+      ],
+      "sources": [
+        { "label": "5minsystems: Zapier Agents pricing for small business", "url": "https://www.5minsystems.com/guides/5minsystems-zapier-agents-pricing-for-small-business-2026" },
+        { "label": "Zapier help: WhatsApp Business requirements", "url": "https://help.zapier.com/hc/en-us/articles/40123068069005/" },
+        { "label": "Katteb: Zapier price and agents add-on", "url": "https://katteb.com/blog/zapier-ai-agent/" }
+      ]
+    },
+    {
+      "id": "lindy",
+      "name": "Lindy",
+      "plan": "Plus plan",
+      "tier": "main",
+      "kind": "Dedicated agent builder",
+      "oneLiner": "A dedicated 'AI assistant' builder, designed for hands-off agents that handle your inbox, meetings and follow-ups.",
+      "cost": { "label": "About £23–38 a month", "low": 23, "high": 38, "free": "No free plan; 7-day free trial", "note": "Sources in 2026 disagree: US$29.99 (newer) or US$49.99 (older) for the entry plan, with monthly credits." },
+      "setup": 3,
+      "setupText": "Medium: templates help, but there are lots of settings.",
+      "ongoing": 3,
+      "ongoingText": "Medium: keep an eye on credit use.",
+      "connects": {
+        "gmail": { "v": "yes", "note": "" },
+        "outlook": { "v": "yes", "note": "" },
+        "whatsapp": { "v": "unverified", "note": "Not found in our research." },
+        "social": { "v": "unverified", "note": "" },
+        "sheets": { "v": "unverified", "note": "Lindy claims 1,000+ integrations; check the one you need." },
+        "canva": { "v": "unverified", "note": "" }
+      },
+      "background": { "rating": 4, "text": "Good: runs on triggers and schedules. When monthly credits run out, agents pause unless you buy top-ups." },
+      "data": "US company. Reports on its UK/EU GDPR status conflict. Ask for its data processing agreement before using client data.",
+      "lockin": { "level": "High", "text": "Agents are built in Lindy's own format." },
+      "goodIf": "you want a hands-off inbox assistant, don't mind a smaller company and will keep an eye on credits.",
+      "pros": [
+        "Designed for hands-off assistants",
+        "Ready-made templates for email and follow-ups",
+        "Works with Gmail and Outlook"
+      ],
+      "cons": [
+        "Prices changed during 2026 and sources disagree",
+        "Reviewers report credits running out quickly",
+        "Customer reviews complain about support",
+        "Smaller company: more risk of big changes or closure",
+        "No free plan"
+      ],
+      "sources": [
+        { "label": "Layer3Labs: Lindy pricing (Sep 2026)", "url": "https://www.layer3labs.io/guides/lindy-ai-pricing" },
+        { "label": "CloudTalk: Lindy pricing (Apr 2026)", "url": "https://www.cloudtalk.io/blog/lindy-ai-pricing/" },
+        { "label": "Usecarly: Lindy review", "url": "https://www.usecarly.com/blog/lindy-ai-review/" }
+      ]
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "plan": "Core plan",
+      "tier": "alternative",
+      "kind": "Visual automation",
+      "oneLiner": "A visual automation tool: you draw your workflow as a map of connected bubbles. Cheaper than Zapier, with AI Agents in beta.",
+      "cost": { "label": "Free tier; paid from about £7–9 a month", "low": 0, "high": 15, "free": "Free plan with 1,000 credits a month", "note": "Core about US$9–12 a month depending on billing. AI steps use extra credits. Sources disagree slightly." },
+      "setup": 4,
+      "setupText": "Higher: powerful, but a real learning curve.",
+      "ongoing": 3,
+      "ongoingText": "Medium: workflows sometimes need fixing when apps change.",
+      "connects": {
+        "gmail": { "v": "yes", "note": "" },
+        "outlook": { "v": "yes", "note": "" },
+        "whatsapp": { "v": "partial", "note": "WhatsApp Business Platform only." },
+        "social": { "v": "partial", "note": "Business pages and accounts." },
+        "sheets": { "v": "yes", "note": "" },
+        "canva": { "v": "unverified", "note": "" }
+      },
+      "background": { "rating": 5, "text": "Excellent: built to run all the time." },
+      "data": "European company with an EU data region option. Check which region your account uses.",
+      "lockin": { "level": "High", "text": "Scenarios would need rebuilding elsewhere." },
+      "goodIf": "you enjoy tinkering and want the cheapest always-on automation.",
+      "pros": ["Cheapest paid automation", "Visual map makes workflows easy to see", "EU data region option"],
+      "cons": ["Steeper learning curve than Zapier", "AI Agents still in beta; pricing may change", "Credit maths can be confusing"],
+      "sources": [
+        { "label": "Eesel: Make review 2026", "url": "https://www.eesel.ai/blog/make-review" },
+        { "label": "Latenode: Make pricing (Sep 2026)", "url": "https://latenode.com/blog/make-com-pricing" }
+      ]
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "plan": "Cloud Starter",
+      "tier": "alternative",
+      "kind": "Technical automation",
+      "oneLiner": "A powerful, open-source automation tool favoured by techies. Its cloud version is hosted in the EU.",
+      "cost": { "label": "About £17–21 a month", "low": 17, "high": 21, "free": "Free if self-hosted (needs technical skills)", "note": "€20 a month billed yearly or €24 monthly for 2,500 runs." },
+      "setup": 5,
+      "setupText": "High: designed for technical users.",
+      "ongoing": 4,
+      "ongoingText": "Medium–high: troubleshooting needs patience.",
+      "connects": {
+        "gmail": { "v": "yes", "note": "" },
+        "outlook": { "v": "yes", "note": "" },
+        "whatsapp": { "v": "partial", "note": "WhatsApp Business Platform only." },
+        "social": { "v": "partial", "note": "Technical setup via Meta." },
+        "sheets": { "v": "yes", "note": "" },
+        "canva": { "v": "unverified", "note": "" }
+      },
+      "background": { "rating": 5, "text": "Excellent: built to run all the time." },
+      "data": "Cloud version hosted in the EU (Frankfurt). Open source, so you can export everything.",
+      "lockin": { "level": "Low", "text": "Open source; workflows export as files." },
+      "goodIf": "you have a techy friend to help and want maximum control with EU hosting. Honestly, too technical as a first step.",
+      "pros": ["EU hosting", "Very flexible", "Low lock-in"],
+      "cons": ["Built for technical users", "Hardest to set up and fix", "Run limits on the starter plan"],
+      "sources": [
+        { "label": "Jetadmin: n8n pricing (Sep 2026)", "url": "https://www.jetadmin.io/blog/n8n-pricing/" },
+        { "label": "Sliplane: n8n cloud vs self-hosting", "url": "https://sliplane.io/blog/n8n-pricing" }
+      ]
+    }
+  ],
+  "emailHelp": {
+    "title": "Not sure which email you use for the business?",
+    "points": [
+      "Ends in @gmail.com or @googlemail.com: that's Gmail.",
+      "Ends in @outlook.com, @hotmail.com or @live.com: that's a personal Microsoft account.",
+      "Uses your own name, like hello@yourtravel.co.uk: ask whoever set it up whether it runs on Google Workspace or Microsoft 365.",
+      "Ends in nhs.net or nhs.uk: stop. That's your work email and must never be used for the business."
+    ],
+    "advice": "If you don't yet have a separate business email, set one up before choosing a platform. A free Gmail address is the most widely supported by every option here. Your host agency may also provide one."
+  },
+  "filter": {
+    "intro": "Answer five quick questions and the matrix will highlight the options that fit you best, with the reasons. There's never one perfect answer, so look at the trade-offs too.",
+    "questions": [
+      {
+        "id": "budget",
+        "q": "What's a comfortable monthly budget?",
+        "options": [
+          { "id": "b10", "label": "Up to £10", "scores": { "claude": -2, "chatgpt": -2, "copilot": 2, "zapier": 1, "lindy": -3, "make": 1, "n8n": -3 }, "reasons": { "claude": "About £15–18, over this budget", "chatgpt": "About £20, over this budget", "copilot": "Fits the budget", "zapier": "Free tier could do to start", "lindy": "Well over this budget", "make": "Free or about £8", "n8n": "Over this budget" } },
+          { "id": "b25", "label": "Up to £25", "scores": { "claude": 2, "chatgpt": 2, "copilot": 1, "zapier": 1, "lindy": -1, "make": 2, "n8n": 1 }, "reasons": { "claude": "Fits the budget", "chatgpt": "Fits the budget", "zapier": "Free or entry plan fits; Agents Pro wouldn't", "lindy": "Only the cheapest plan, if currently ~£23", "make": "Fits easily" } },
+          { "id": "b50", "label": "Up to £50", "scores": { "claude": 2, "chatgpt": 2, "copilot": 1, "zapier": 2, "lindy": 1, "make": 2, "n8n": 2 }, "reasons": { "claude": "Fits, with room for another tool", "chatgpt": "Fits the budget", "zapier": "Fits most plans", "lindy": "Entry plan fits" } },
+          { "id": "bany", "label": "Whatever saves the most time", "scores": { "zapier": 1, "lindy": 1 }, "reasons": {} }
+        ]
+      },
+      {
+        "id": "email",
+        "q": "Which email do you use for the business?",
+        "options": [
+          { "id": "gmail", "label": "Gmail", "scores": { "claude": 3, "chatgpt": 3, "copilot": -1, "zapier": 2, "lindy": 2, "make": 2, "n8n": 1 }, "reasons": { "claude": "Gmail connector reads and drafts", "chatgpt": "Gmail connector, plus Gmail-triggered tasks", "copilot": "Copilot is built around Outlook", "zapier": "Connects to Gmail", "lindy": "Connects to Gmail" } },
+          { "id": "outlookcom", "label": "Outlook.com / Hotmail", "scores": { "claude": -3, "chatgpt": -1, "copilot": 2, "zapier": 3, "lindy": 2, "make": 2, "n8n": 1 }, "reasons": { "claude": "Can't connect personal Outlook.com accounts", "chatgpt": "Limited Outlook support on personal plans", "copilot": "Works inside Outlook", "zapier": "Connects to Outlook.com", "lindy": "Connects to Outlook" } },
+          { "id": "workspace", "label": "Google Workspace (own domain)", "scores": { "claude": 3, "chatgpt": 3, "copilot": -1, "zapier": 2, "lindy": 2, "make": 2, "n8n": 1 }, "reasons": { "claude": "Gmail connector works with Workspace", "chatgpt": "Gmail connector works with Workspace", "copilot": "Copilot is built around Outlook" } },
+          { "id": "m365biz", "label": "Microsoft 365 Business (own domain, not NHS)", "scores": { "claude": 2, "chatgpt": 1, "copilot": 0, "zapier": 2, "lindy": 2, "make": 2, "n8n": 1 }, "reasons": { "claude": "Microsoft 365 connector works with business accounts", "copilot": "Personal Copilot doesn't cover a business account; that's a separate business licence", "zapier": "Connects to Microsoft 365" } },
+          { "id": "unsure", "label": "Not sure / don't have one yet", "scores": {}, "reasons": {} }
+        ]
+      },
+      {
+        "id": "handsoff",
+        "q": "How hands-off do you want it to be?",
+        "options": [
+          { "id": "ondemand", "label": "I'm happy to press 'go' each time", "scores": { "claude": 2, "chatgpt": 2, "copilot": 2, "zapier": -1, "lindy": -1, "make": -2, "n8n": -2 }, "reasons": { "claude": "Open the Project and ask", "chatgpt": "Open your custom GPT and ask", "copilot": "Ask in Word or Outlook", "zapier": "More setup than you need", "make": "More setup than you need" } },
+          { "id": "schedule", "label": "Run on a schedule and leave drafts for me", "scores": { "claude": 3, "chatgpt": 2, "copilot": -3, "zapier": 2, "lindy": 2, "make": 1, "n8n": 1 }, "reasons": { "claude": "Scheduled tasks run in the cloud, laptop closed", "chatgpt": "Scheduled tasks available", "copilot": "No scheduled tasks on personal plans", "zapier": "Schedules are standard", "lindy": "Schedules are standard" } },
+          { "id": "react", "label": "React automatically the moment things arrive", "scores": { "claude": -1, "chatgpt": 1, "copilot": -3, "zapier": 3, "lindy": 3, "make": 2, "n8n": 2 }, "reasons": { "claude": "Runs on a clock, not when emails arrive", "chatgpt": "Gmail-triggered tasks", "copilot": "Can't run by itself", "zapier": "Built for exactly this", "lindy": "Built for exactly this", "make": "Built for this, with more setup" } }
+        ]
+      },
+      {
+        "id": "comfort",
+        "q": "How do you feel about setting things up?",
+        "options": [
+          { "id": "chat", "label": "Keep it as simple as chatting", "scores": { "claude": 2, "chatgpt": 2, "copilot": 2, "zapier": -2, "lindy": 0, "make": -3, "n8n": -4 }, "reasons": { "claude": "Feels like chatting", "chatgpt": "Feels like chatting", "copilot": "Already in apps you know", "zapier": "Feels like building, not chatting", "make": "A real learning curve", "n8n": "Built for techies" } },
+          { "id": "guide", "label": "Happy to follow a step-by-step guide", "scores": { "claude": 1, "chatgpt": 1, "copilot": 0, "zapier": 1, "lindy": 1, "make": -1, "n8n": -2 }, "reasons": { "zapier": "Doable with a guide", "lindy": "Templates help", "n8n": "Guides assume technical knowledge" } },
+          { "id": "tinker", "label": "I quite enjoy tinkering", "scores": { "claude": 1, "chatgpt": 1, "copilot": 0, "zapier": 2, "lindy": 1, "make": 2, "n8n": 1 }, "reasons": { "zapier": "Rewards tinkering", "make": "Rewards tinkering, and it's cheap" } }
+        ]
+      },
+      {
+        "id": "priority",
+        "q": "Where would help make the biggest difference?",
+        "options": [
+          { "id": "email", "label": "Email, enquiries and documents", "scores": { "claude": 2, "chatgpt": 2, "copilot": 1, "zapier": 1, "lindy": 2, "make": 1, "n8n": 0 }, "reasons": { "claude": "Strong at drafting replies", "chatgpt": "Strong at drafting replies", "lindy": "Designed around the inbox" } },
+          { "id": "social", "label": "Social posts and content", "scores": { "claude": 2, "chatgpt": 2, "copilot": 0, "zapier": 1, "lindy": 0, "make": 1, "n8n": 0 }, "reasons": { "claude": "Strong writing, plus Canva connector", "chatgpt": "Writing plus image creation", "zapier": "Can post to Facebook Pages and Instagram Business" } },
+          { "id": "whatsapp", "label": "WhatsApp and messages with my team", "scores": { "claude": 1, "chatgpt": 2, "copilot": 0, "zapier": 1, "lindy": 0, "make": 0, "n8n": 0 }, "reasons": { "claude": "Drafts messages for you to paste", "chatgpt": "Drafts messages; custom GPT can be shared with your team", "zapier": "WhatsApp Business only, with Meta setup" } }
+        ]
+      }
+    ]
+  },
+  "alternativesNote": "Also looked at: Relevance AI (aimed at sales teams, more than you need). Make and n8n are shown as alternatives: capable and good value, but more technical than a first step needs."
+}

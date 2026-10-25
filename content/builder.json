@@ -1,0 +1,329 @@
+{
+  "intro": "This is your workshop. Answer a few questions and you'll get a ready-to-paste setup pack for the platform you choose: the instructions, a numbered setup checklist and a test to check it works. Your agents are saved on this device under 'My agents', so you can come back, tweak them or build more.",
+  "privacyNote": "Everything you type here stays in this browser on this device. Nothing is sent anywhere. Use 'Export' in My agents to keep a backup file or move to another device.",
+  "steps": ["Start", "Goal", "Tools", "When", "Rules", "Your details", "Platform", "Your pack"],
+  "audiences": [
+    { "id": "me", "label": "Just me", "desc": "Briefings, summaries, reminders" },
+    { "id": "clients", "label": "My clients", "desc": "Replies, quotes, trip emails" },
+    { "id": "team", "label": "My team or recruits", "desc": "Onboarding, support, updates" },
+    { "id": "public", "label": "The public", "desc": "Social posts and content" }
+  ],
+  "tools": [
+    { "id": "email", "label": "My business email", "desc": "Read emails and create drafts", "instr": "Read emails in my business inbox and create draft replies. You do not send emails." },
+    { "id": "calendar", "label": "My calendar", "desc": "See departures, deadlines and appointments", "instr": "Look at my calendar for upcoming departures, returns, deadlines and appointments." },
+    { "id": "files", "label": "My documents", "desc": "FAQs, supplier list, onboarding pack", "instr": "Use the documents I've provided (my knowledge files) as your main source. Prefer them over general knowledge." },
+    { "id": "sheet", "label": "A spreadsheet or list", "desc": "Leads, team tracker, departures", "instr": "Read the list or spreadsheet I provide (for example my leads or team tracker). Don't change it." },
+    { "id": "web", "label": "Web search", "desc": "Research destinations and ideas", "instr": "You may search the web for ideas and background. Treat anything about prices, availability or entry rules as needing my check, and say where you found it." },
+    { "id": "canva", "label": "Canva", "desc": "Create social post designs", "instr": "If Canva is connected, you may create draft designs for social posts. Don't publish anything." },
+    { "id": "paste", "label": "Nothing: I'll paste things in", "desc": "Simplest and safest to start", "instr": "I'll paste the information you need into the chat." }
+  ],
+  "triggers": [
+    { "id": "ondemand", "label": "When I ask", "desc": "You press go: the best way to start" },
+    { "id": "schedule", "label": "On a schedule", "desc": "e.g. every Monday at 7am" },
+    { "id": "event", "label": "When something arrives", "desc": "e.g. a new enquiry email" }
+  ],
+  "frequencies": [
+    { "id": "daily", "label": "Every day" },
+    { "id": "weekdays", "label": "Every weekday" },
+    { "id": "weekly", "label": "Once a week" },
+    { "id": "monthly", "label": "Once a month (1st)" }
+  ],
+  "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+  "tones": [
+    { "id": "warm", "label": "Warm and friendly", "instr": "Warm, friendly and personal, like a trusted friend who happens to be a travel expert. Never gushing or salesy." },
+    { "id": "professional", "label": "Polished and professional", "instr": "Polished, professional and reassuring, but never stiff. Clear and concise." },
+    { "id": "chatty", "label": "Chatty and upbeat", "instr": "Chatty, upbeat and enthusiastic, as on social media, while staying genuine and never pushy." }
+  ],
+  "guardrails": [
+    { "id": "draftonly", "label": "Always ask me before anything is sent", "text": "Never send anything. Save replies as drafts or show them to me for approval.", "default": true },
+    { "id": "noprices", "label": "Never quote prices or availability as final", "text": "Never state a price, availability or deal as confirmed. If you mention a price, label it 'guide price, to be confirmed with the supplier'.", "default": true },
+    { "id": "noinvent", "label": "Don't make things up", "text": "If you're not sure of a fact, say so. Never invent hotels, suppliers, offers, reviews or details about a client.", "default": true },
+    { "id": "entry", "label": "Leave visa and entry advice to me", "text": "Never give visa, passport or entry-requirement advice. If it comes up, say 'I'll confirm the entry requirements for your trip personally' and flag it to me.", "default": true },
+    { "id": "sensitive", "label": "Flag sensitive situations to me", "text": "If a message mentions a complaint, refund, health or medical issue, accessibility need, bereavement or legal matter, don't draft a reply. Flag it to me as 'Needs {name}'.", "default": true },
+    { "id": "minimaldata", "label": "Handle personal details carefully", "text": "Don't repeat passport numbers, dates of birth, card details or health information in your output. Never ask anyone to send these by email.", "default": true },
+    { "id": "verifylist", "label": "Add a 'please check' list to drafts", "text": "End every draft meant for a client or the public with a short 'To check before sending' list of facts to verify (prices, dates, availability, entry rules). I'll delete it before sending.", "default": false },
+    { "id": "noincome", "label": "No income or earnings claims", "text": "Never mention income, earnings, financial freedom or giving up a job. Make no promises about what anyone will achieve with the business opportunity.", "default": false },
+    { "id": "consent", "label": "Only message people who've said yes", "text": "Only draft marketing messages for people I've said are happy to hear from me. Personal follow-ups must be genuine, short and low-pressure.", "default": false },
+    { "id": "ukenglish", "label": "British English, £ and UK dates", "text": "Use British English spelling, £ for money and UK date format (e.g. 14 February 2027).", "default": true }
+  ],
+  "templates": [
+    {
+      "id": "enquiry",
+      "name": "Enquiry first-reply drafter",
+      "category": "Travel",
+      "blurb": "Drafts a warm first reply to every new holiday enquiry, ready and waiting when you sit down in the evening.",
+      "minutes": 12,
+      "draft": {
+        "name": "Enquiry first-reply drafter",
+        "usecase": "enquiry",
+        "goal": "When a new holiday enquiry comes in, work out what the client is asking for and draft a warm first reply that thanks them, confirms what I've understood and asks the questions I need answered before I can put options together.",
+        "audience": "clients",
+        "steps": "1. Read the enquiry carefully.\n2. Pull out the brief: dates or flexibility, departure airport, who is travelling (adults, children and their ages), budget, destination ideas, must-haves and any special occasion.\n3. List anything important that's missing.\n4. Draft a reply that thanks them by first name, sums up their trip in one or two sentences, asks for the missing details (no more than 5 questions, as a short list) and explains the next step (I'll come back with 2–3 tailored options).\n5. If they mention a destination, you may add one short, enthusiastic line about it, but no prices, availability or specific hotels yet.",
+        "output": "A draft reply to the enquiry (saved as an email draft if email is connected, otherwise shown in the chat). Above it, a short note for me with: the brief as bullet points, anything unusual, and 'Needs {name}' if the enquiry raises anything sensitive.",
+        "tools": ["email"],
+        "trigger": { "type": "schedule", "frequency": "weekdays", "day": "Monday", "time": "18:00", "eventDesc": "a new email that looks like a holiday enquiry" },
+        "guardrails": ["draftonly", "noprices", "noinvent", "entry", "sensitive", "minimaldata", "ukenglish"],
+        "customRules": "Only look at emails received since the last run that look like new holiday enquiries. Ignore newsletters, suppliers and existing bookings.",
+        "knowledge": ""
+      },
+      "test": "Here's a test enquiry (not a real client):\n\n\"Hi, we're thinking about a holiday next summer with the kids (7 and 10). Somewhere hot with a pool, maybe Spain or Greece? Not too long a flight. We're flying from Manchester. Thanks, Sarah\"\n\nDraft my first reply, following your instructions.",
+      "goodLooksLike": ["Thanks Sarah by name and sounds like you", "Sums up the trip correctly (family of 4, hot, pool, short flight, Manchester)", "Asks about dates, budget and board basis, and no more than 5 questions", "No prices, hotels or availability mentioned", "Includes a short brief for you above the draft"]
+    },
+    {
+      "id": "briefing",
+      "name": "Business in 15 minutes",
+      "category": "Admin",
+      "blurb": "A Monday-morning briefing: what's waiting on you, deadlines, departures and your top 3 priorities.",
+      "minutes": 10,
+      "draft": {
+        "name": "Business in 15 minutes",
+        "usecase": "briefing",
+        "goal": "Every Monday morning, give me a short briefing on my business so I can plan my week in 15 minutes.",
+        "audience": "me",
+        "steps": "1. Look at my business inbox for the last 7 days.\n2. List emails still waiting for my reply (clients, suppliers, team), most urgent first, one line each.\n3. List anything with a deadline in the next 14 days: balances due, option expiry, ticketing deadlines, promotions ending.\n4. Check my calendar for departures and returns in the next 14 days.\n5. Suggest my top 3 priorities for the week, with a one-line reason for each.\n6. Keep the whole briefing readable in under 5 minutes.",
+        "output": "A briefing with four headings: Waiting on me · Deadlines · Departures and returns · Top 3 this week. If something is unclear, say so rather than guessing.",
+        "tools": ["email", "calendar"],
+        "trigger": { "type": "schedule", "frequency": "weekly", "day": "Monday", "time": "07:00", "eventDesc": "" },
+        "guardrails": ["draftonly", "noinvent", "minimaldata", "ukenglish"],
+        "customRules": "This briefing is just for me. Don't contact anyone or change anything.",
+        "knowledge": ""
+      },
+      "test": "Run my business briefing now, covering the last 7 days.",
+      "goodLooksLike": ["Four clear headings", "Real emails and dates from your inbox and calendar, not invented ones", "Top 3 priorities that make sense", "Readable in a few minutes", "Says when it isn't sure"]
+    },
+    {
+      "id": "content",
+      "name": "Weekly content and follow-ups",
+      "category": "Network marketing",
+      "blurb": "Every Sunday: a week of social posts plus genuine follow-up messages for your leads, ready to schedule and send in one sitting.",
+      "minutes": 14,
+      "draft": {
+        "name": "Weekly content and follow-ups",
+        "usecase": "contentcal",
+        "goal": "Every Sunday evening, plan my social posts for the coming week and draft follow-up messages for my leads, so I can schedule and send everything in one sitting.",
+        "audience": "public",
+        "steps": "1. Plan 7 posts, one per day: 3 travel inspiration or tips, 2 behind-the-scenes or personal, 1 client story (only if I've given you one with permission), 1 gentle post about the business opportunity.\n2. For each post give: day, platform (Instagram or Facebook), a hook line, the caption (under 120 words), an image idea and 3–5 hashtags.\n3. Use only offers and news I've given you. Never invent offers or prices.\n4. From my leads list, pick anyone I haven't contacted for 10+ days and draft a short, genuine follow-up for each (2–3 sentences, no pressure, no copy-paste feel).\n5. Finish with a checklist of anything I must verify before posting.",
+        "output": "One tidy plan with three sections: This week's posts (as a table) · Follow-ups to send (name and message) · Check before posting.",
+        "tools": ["files", "paste"],
+        "trigger": { "type": "schedule", "frequency": "weekly", "day": "Sunday", "time": "18:00", "eventDesc": "" },
+        "guardrails": ["draftonly", "noprices", "noinvent", "noincome", "consent", "verifylist", "ukenglish"],
+        "customRules": "Business-opportunity posts must be honest that results vary and that it takes time and effort. Avoid phrases like 'financial freedom', 'quit your job' or 'passive income'. Follow my network marketing company's social media policy.",
+        "knowledge": "Add a short document with: your current offers, your network marketing company's social media rules, and your leads list (first names and notes only)."
+      },
+      "test": "Plan this week's posts and follow-ups. Notes for this week: I'm promoting October half-term to Lanzarote, and I've just been on a cruise familiarisation trip. Leads: Jo (last spoke 12 days ago, interested in travel perks), Priya (spoke 3 days ago).",
+      "goodLooksLike": ["7 posts with a good mix, not all selling", "Uses the Lanzarote and cruise notes, and invents no other offers", "A follow-up for Jo only (Priya was 3 days ago)", "No income or 'financial freedom' language anywhere", "A 'check before posting' list at the end"]
+    }
+  ],
+  "blankTest": "Here's a test (use a made-up or anonymised example): [paste an example here]. Do the job exactly as your instructions say, then list which of your rules you followed.",
+  "blankGoodLooksLike": ["Does what you asked, in the format you asked for", "Sounds like you", "Follows every rule you set", "Doesn't invent facts", "Hands back to you rather than sending"],
+  "platformSetup": {
+    "claude": {
+      "name": "Claude",
+      "create": [
+        "Go to claude.ai (or open the Claude app) and sign in with your business email, not your NHS one.",
+        "First time only: open Settings → Privacy and decide whether to let your chats help train models. We suggest switching it off.",
+        "In the sidebar, choose Projects → New project. Call it \"{agentName}\".",
+        "Find the project's instructions box (often 'Set project instructions') and paste in the instructions from this pack.",
+        "{knowledgeStep}"
+      ],
+      "knowledgeStep": "Add your reference documents to the project's files (for example your FAQ, offers or onboarding pack). General documents only, no client personal data.",
+      "connect": {
+        "email": "Settings → Connectors → Gmail → Connect, then sign in with your business Google account. (Claude can't connect personal Outlook.com or Hotmail inboxes.)",
+        "calendar": "Settings → Connectors → Google Calendar → Connect.",
+        "files": "Upload documents to the project, or Settings → Connectors → Google Drive → Connect.",
+        "sheet": "Upload or paste your list each time, or connect Google Drive so Claude can read the spreadsheet.",
+        "web": "Web search is built in. Check it's switched on in the chat's tools menu.",
+        "canva": "Settings → Connectors → browse the directory → Canva → Connect.",
+        "paste": "Nothing to connect. You'll paste things into the chat."
+      },
+      "trigger": {
+        "ondemand": "Whenever you need it: open the project, start a new chat and paste or describe the job.",
+        "schedule": "In a chat inside the project, ask Claude to schedule the job, e.g. paste the test prompt and add 'Please run this {schedule}'. (You may also see a 'Scheduled' option in the sidebar.) New scheduled tasks run in the cloud, so your computer can be off.",
+        "event": "Claude can't start the moment an email arrives. Instead, schedule it to check regularly, e.g. 'every weekday at 6pm, look at emails since the last run'. Set this up as above."
+      },
+      "review": [
+        "See, pause or delete scheduled tasks from the scheduled tasks list (or ask Claude 'show my scheduled tasks').",
+        "Tweak behaviour any time by editing the project instructions.",
+        "Disconnect accounts under Settings → Connectors."
+      ],
+      "help": "Menus move around. If you can't find something, ask Claude itself: \"How do I connect Gmail?\" or \"How do I schedule a task?\""
+    },
+    "chatgpt": {
+      "name": "ChatGPT",
+      "create": [
+        "Go to chatgpt.com (or the app) and sign in with your business email, not your NHS one.",
+        "First time only: Settings → Data controls → switch off 'Improve the model for everyone'.",
+        "Create a custom GPT: Explore GPTs (or 'GPTs') → Create → Configure. Name it \"{agentName}\" and paste the instructions from this pack into Instructions. Keep sharing on 'Only me' unless it's for your team.",
+        "{knowledgeStep}"
+      ],
+      "knowledgeStep": "Upload reference documents to the GPT's Knowledge section (FAQ, offers, onboarding pack). General documents only, no client personal data.",
+      "connect": {
+        "email": "Settings → Apps (may be called Connectors or Plugins) → Gmail → Connect with your business Google account.",
+        "calendar": "Settings → Apps → Google Calendar → Connect.",
+        "files": "Upload to the GPT's Knowledge section, or Settings → Apps → Google Drive.",
+        "sheet": "Upload or paste your list each time, or connect Google Drive.",
+        "web": "In the GPT's Configure page, tick Web search under Capabilities.",
+        "canva": "Settings → Apps → Canva → Connect.",
+        "paste": "Nothing to connect. You'll paste things into the chat."
+      },
+      "trigger": {
+        "ondemand": "Open your GPT and start a chat whenever you need it.",
+        "schedule": "In a chat, ask ChatGPT to run the job {schedule}, e.g. paste the test prompt and add 'Do this {schedule}'. Manage it under Tasks (or Scheduled) in the menu. Note: tasks may not see a Project's files, so put key info in the instructions.",
+        "event": "On Plus you can ask for a task that runs when certain Gmail emails arrive, e.g. 'Whenever I get an email that looks like a holiday enquiry, draft a reply following these instructions…'. This feature varies by account; if you don't see it, use a schedule instead."
+      },
+      "review": [
+        "Pause or delete tasks from the Tasks/Scheduled page.",
+        "Edit your GPT (Configure) to tweak the instructions.",
+        "Disconnect apps under Settings → Apps."
+      ],
+      "help": "Menus move around. If you can't find something, ask ChatGPT itself: \"How do I connect Gmail?\""
+    },
+    "copilot": {
+      "name": "Microsoft Copilot",
+      "create": [
+        "Open copilot.microsoft.com, or Copilot in Word or Outlook, and check the account picture in the corner shows your PERSONAL Microsoft account, never your NHS one.",
+        "Personal Copilot doesn't keep standing instructions for each agent. Save the instructions from this pack in a Word document called \"{agentName}\".",
+        "Each time, paste the instructions first, then the job."
+      ],
+      "knowledgeStep": "",
+      "connect": {
+        "email": "Open the email in Outlook (personal) and use Copilot there to summarise or draft a reply.",
+        "calendar": "Not available. Paste in the dates you need.",
+        "files": "Open the document in Word and use Copilot there, or paste the content.",
+        "sheet": "Open the spreadsheet in Excel and use Copilot there.",
+        "web": "Copilot can search the web in the Copilot app.",
+        "canva": "Not available. Microsoft Designer is the equivalent.",
+        "paste": "Paste things into the chat."
+      },
+      "trigger": {
+        "ondemand": "Paste the instructions plus the job into Copilot whenever you need it.",
+        "schedule": "Personal Copilot can't run on a schedule. Add a repeating reminder to your calendar to run it, or choose a different platform for this agent.",
+        "event": "Personal Copilot can't react to emails arriving. Consider a different platform for this agent."
+      },
+      "review": [
+        "Nothing runs in the background, so there's nothing to switch off.",
+        "Edit your saved instructions document to tweak it."
+      ],
+      "help": "If something looks different, check you're in your personal account first."
+    },
+    "zapier": {
+      "name": "Zapier",
+      "create": [
+        "Go to zapier.com and sign up with your business email.",
+        "Open Zapier Agents → New agent. Name it \"{agentName}\".",
+        "Paste the instructions from this pack into the agent's instructions.",
+        "{knowledgeStep}"
+      ],
+      "knowledgeStep": "Add a knowledge source, such as a Google Doc with your FAQ or offers. General documents only.",
+      "connect": {
+        "email": "Add tools: Gmail (or Microsoft Outlook) → 'Find email' and 'Create draft'. Don't add 'Send email', so it can only draft.",
+        "calendar": "Add a tool: Google Calendar or Outlook Calendar → 'Find events'.",
+        "files": "Add Google Drive or Google Docs as a knowledge source.",
+        "sheet": "Add a tool: Google Sheets → 'Lookup rows' (read only).",
+        "web": "Turn on web search or browsing in the agent's tools.",
+        "canva": "Check whether the Canva action you need exists; otherwise paste captions into Canva yourself.",
+        "paste": "Use the agent's chat and paste things in."
+      },
+      "trigger": {
+        "ondemand": "Use the agent's chat to run it whenever you need.",
+        "schedule": "Add a trigger: Schedule by Zapier → {schedule}.",
+        "event": "Add a trigger: Gmail → 'New email matching search' (e.g. subject contains 'enquiry'), or Microsoft Outlook → 'New email'."
+      },
+      "review": [
+        "Switch the agent off to pause it.",
+        "Check the activity history to see every run and what it did.",
+        "Keep an eye on your monthly activity count so there are no surprises."
+      ],
+      "help": "Zapier has a built-in Copilot that can help you set up steps: describe what you want in plain English."
+    },
+    "lindy": {
+      "name": "Lindy",
+      "create": [
+        "Go to lindy.ai and start the free trial with your business email. Put the trial end date in your calendar.",
+        "Create a new agent from scratch (or the nearest template). Name it \"{agentName}\".",
+        "Paste the instructions from this pack into the agent's main instructions.",
+        "{knowledgeStep}"
+      ],
+      "knowledgeStep": "Add a knowledge base with your reference documents. General documents only.",
+      "connect": {
+        "email": "Add Gmail or Outlook. Choose 'draft reply' rather than 'send'.",
+        "calendar": "Add Google Calendar or Outlook Calendar.",
+        "files": "Add your documents to the agent's knowledge base.",
+        "sheet": "Add Google Sheets, if it's listed.",
+        "web": "Add web search.",
+        "canva": "Check Lindy's integrations list for Canva.",
+        "paste": "Chat with the agent and paste things in."
+      },
+      "trigger": {
+        "ondemand": "Message the agent when you need it.",
+        "schedule": "Add a schedule trigger: {schedule}.",
+        "event": "Add an 'email received' trigger, filtered to enquiries."
+      },
+      "review": [
+        "Switch the agent off from its settings to pause it.",
+        "Check the task history to see what it did.",
+        "Watch your credits on the billing page.",
+        "Cancel before the trial ends if it isn't right for you."
+      ],
+      "help": "Use Lindy's templates as a starting point and paste these instructions over the top."
+    },
+    "make": {
+      "name": "Make",
+      "create": [
+        "Sign up at make.com with your business email.",
+        "Create a new scenario called \"{agentName}\".",
+        "Add an AI Agent module (beta) or an AI module (e.g. Anthropic Claude or OpenAI) and paste the instructions as its system prompt.",
+        "{knowledgeStep}"
+      ],
+      "knowledgeStep": "Add your reference documents to the agent's knowledge, if offered, or paste key facts into the instructions.",
+      "connect": {
+        "email": "Add Gmail or Outlook modules: 'Watch emails' (to read) and 'Create a draft' (to write).",
+        "calendar": "Add a Google Calendar or Outlook Calendar 'Search events' module.",
+        "files": "Add a Google Drive 'Download a file' module or paste key facts into the instructions.",
+        "sheet": "Add a Google Sheets 'Search rows' module.",
+        "web": "Give the AI agent a web search tool if available.",
+        "canva": "Check whether a Canva module exists for what you need.",
+        "paste": "Run the scenario manually with your text."
+      },
+      "trigger": {
+        "ondemand": "Click 'Run once' when you need it.",
+        "schedule": "Set the scenario's schedule (the clock icon) to {schedule}.",
+        "event": "Start the scenario with a 'Watch emails' module."
+      },
+      "review": ["Switch scheduling off to pause.", "Check the run history and credit usage regularly."],
+      "help": "Make's AI assistant can help you add modules if you describe what you want."
+    },
+    "n8n": {
+      "name": "n8n",
+      "create": [
+        "Sign up for n8n Cloud with your business email.",
+        "Create a new workflow called \"{agentName}\".",
+        "Add an AI Agent node, connect a chat model (e.g. Anthropic or OpenAI) and paste the instructions into its system message.",
+        "{knowledgeStep}"
+      ],
+      "knowledgeStep": "Paste key reference facts into the system message, or add a document store if you're comfortable doing so.",
+      "connect": {
+        "email": "Attach a Gmail or Outlook tool to the AI Agent node, with 'Get messages' and 'Create draft' only.",
+        "calendar": "Attach a Google Calendar tool ('Get events').",
+        "files": "Attach a Google Drive tool or paste facts into the system message.",
+        "sheet": "Attach a Google Sheets tool ('Get rows').",
+        "web": "Attach a web search tool.",
+        "canva": "Not covered here.",
+        "paste": "Start with a Chat Trigger and paste text in."
+      },
+      "trigger": {
+        "ondemand": "Start with a Chat Trigger or Manual Trigger.",
+        "schedule": "Start with a Schedule Trigger set to {schedule}.",
+        "event": "Start with a Gmail Trigger or Outlook Trigger."
+      },
+      "review": ["Deactivate the workflow to pause it.", "Check Executions to see every run."],
+      "help": "n8n has a lot of community templates; search for 'Gmail AI agent draft reply'."
+    }
+  },
+  "reviewTips": [
+    "For the first two weeks, read everything it produces.",
+    "When it gets something wrong, don't just fix the output: add a line to the instructions so it doesn't happen again.",
+    "Keep a note of time saved each week. It tells you whether the agent is worth keeping.",
+    "If it's more hassle than help after two weeks, switch it off. That's a valid result."
+  ]
+}

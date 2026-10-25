@@ -1,0 +1,93 @@
+{
+  "intro": "You've probably already used a [[chatbot]] like ChatGPT. An [[agent]] is the next step on. The easiest way to see the difference is to watch the same job done three ways.",
+  "saves": "Knowing which of the three you need stops you over-building. Lots of jobs only need a good chatbot prompt, and that's fine.",
+  "progression": [
+    {
+      "id": "chatbot",
+      "name": "Chatbot",
+      "analogy": "Like asking a knowledgeable friend.",
+      "what": "You ask a question, it answers. You copy the answer, open your other apps and do all the doing yourself.",
+      "example": "\"What are good family hotels in Crete?\" You get a list, then you check each one, price it and write the email yourself.",
+      "decides": "You decide every step",
+      "variety": "Handles any question",
+      "acts": "Can't do anything by itself",
+      "effort": "Low setup, high effort each time",
+      "flow": ["You ask", "It answers", "You do the rest"]
+    },
+    {
+      "id": "automation",
+      "name": "Automation",
+      "analogy": "Like a standing order at the bank.",
+      "what": "A fixed recipe: when X happens, do Y. It runs by itself, but only does exactly what it was set up to do.",
+      "example": "\"When someone fills in my enquiry form, add them to my spreadsheet and send my standard thank-you email.\" That's great, until an enquiry doesn't fit the pattern.",
+      "decides": "You decide the steps once, in advance",
+      "variety": "Breaks on anything unexpected",
+      "acts": "Takes actions automatically",
+      "effort": "Medium setup, no effort after",
+      "flow": ["Something happens", "Fixed step 1", "Fixed step 2"]
+    },
+    {
+      "id": "agent",
+      "name": "Agent",
+      "analogy": "Like briefing a capable assistant.",
+      "what": "You give it a goal. It works out the steps, uses tools (the web, your inbox, your files), checks what it found and hands the result back to you to approve.",
+      "example": "\"Find 3 family-friendly all-inclusive options in Crete for half-term under £4k and draft a client email.\" It researches, filters, drafts and asks you to check.",
+      "decides": "It plans the steps; you set the rules",
+      "variety": "Copes with messy, varied requests",
+      "acts": "Uses tools, within limits you set",
+      "effort": "Medium setup, light checking after",
+      "flow": ["You set a goal", "It plans and uses tools", "You approve"]
+    }
+  ],
+  "loopIntro": "Here's what happens inside an agent, step by step. Press Next, or switch on autoplay.",
+  "loopGoal": "Find 3 family-friendly all-inclusive options in Crete for February half-term under £4k (2 adults, 2 children aged 6 and 9) and draft a client email.",
+  "loop": [
+    {
+      "id": "goal",
+      "label": "Goal",
+      "title": "You set the goal",
+      "body": "You type one request, or it arrives as an enquiry. You've already briefed the agent once with your [[instructions]]: your agency, your tone, your rules.",
+      "detail": "\"Find 3 family-friendly all-inclusive options in Crete for half-term under £4k and draft a client email.\""
+    },
+    {
+      "id": "plan",
+      "label": "Plan",
+      "title": "It makes a plan",
+      "body": "The agent breaks the goal into steps it can do.",
+      "detail": "1. Work out what 'family-friendly' means for this family (kids' club, shallow pool, beach). 2. Search for options. 3. Check prices against the £4k budget. 4. Pick the best 3. 5. Draft the email."
+    },
+    {
+      "id": "tool",
+      "label": "Use a tool",
+      "title": "It uses a tool",
+      "body": "It searches the web, reads your client notes and looks at your supplier guide in its [[knowledge]] files.",
+      "detail": "Search: 'all-inclusive Crete kids club'. Reads your note: 'Smith family: prefer transfers under 1 hour'."
+    },
+    {
+      "id": "check",
+      "label": "Check",
+      "title": "It checks the result",
+      "body": "A good agent checks its findings against your goal and rules.",
+      "detail": "Option 2 is £4,350, over budget, so it's dropped. Option 3 has a 2-hour transfer, so it's flagged. It notes: 'Prices from a public website on 25 Oct. Must be re-checked live.'"
+    },
+    {
+      "id": "repeat",
+      "label": "Repeat",
+      "title": "It repeats until done",
+      "body": "It goes round the loop again, searching, checking and swapping, until it has 3 options that fit.",
+      "detail": "Round 2: finds a replacement under budget with a 45-minute transfer. Now it has 3 good options."
+    },
+    {
+      "id": "handback",
+      "label": "Hand back",
+      "title": "It hands back to you",
+      "body": "It writes the email in your voice and saves it as a [[draft]], listing what you need to check. Nothing is sent until you say so. That's the [[human in the loop|hitl]].",
+      "detail": "\"Draft saved. Please check: live prices and availability with the supplier; the transfer time for option 1.\""
+    }
+  ],
+  "loopTakeaway": "Notice the agent did hours of digging, but it never sent anything and it flagged what to double-check. That's exactly how you want it.",
+  "more": [
+    { "title": "So is ChatGPT a chatbot or an agent?", "body": "Both. The same products (ChatGPT, Claude, Copilot) behave like a chatbot when you just chat, and like an agent when you switch on tools, connect your accounts or give them a job to run on a schedule. The labels describe how you use it more than which app it is." },
+    { "title": "Why not just use an automation for everything?", "body": "Automations are cheaper and more predictable, so use them for fixed jobs, like 'save every booking confirmation to a folder'. Agents earn their keep where the job needs judgement or writing, like reading a rambling enquiry and working out what the client actually wants." }
+  ]
+}

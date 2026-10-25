@@ -1,0 +1,11 @@
+[
+  { "id": "week", "code": "01", "title": "Your week, reclaimed", "short": "Your week", "minutes": 7, "summary": "Where the business squeezes into your week, and what agents could hand back." },
+  { "id": "agent", "code": "02", "title": "What is an agent?", "short": "What is an agent?", "minutes": 9, "summary": "Chatbot, automation, agent: what's the difference, and how an agent actually works." },
+  { "id": "anatomy", "code": "03", "title": "The building blocks", "short": "Building blocks", "minutes": 8, "summary": "The six parts every agent is made of, explained with travel examples." },
+  { "id": "fit", "code": "04", "title": "Good at, bad at", "short": "Good at, bad at", "minutes": 8, "summary": "Sort real tasks from your week: hand it over, check it, or keep it yourself." },
+  { "id": "gallery", "code": "05", "title": "Ideas gallery", "short": "Ideas gallery", "minutes": 8, "summary": "Ready-made agent ideas for travel, network marketing and admin." },
+  { "id": "safety", "code": "06", "title": "Safety, trust and the rules", "short": "Safety & rules", "minutes": 8, "summary": "Keeping NHS and business apart, client data, marketing rules and travel facts." },
+  { "id": "platforms", "code": "07", "title": "Choosing your platform", "short": "Choose a platform", "minutes": 12, "summary": "An honest comparison of the realistic options, with costs and trade-offs." },
+  { "id": "builder", "code": "08", "title": "Agent Builder", "short": "Agent Builder", "minutes": 20, "summary": "Design an agent step by step and get a copy-paste setup pack for your platform." },
+  { "id": "plan", "code": "09", "title": "Your first 30 days", "short": "First 30 days", "minutes": 5, "summary": "A gentle plan for getting started, plus a printable cheat sheet." }
+]

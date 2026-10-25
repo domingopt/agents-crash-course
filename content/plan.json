@@ -1,0 +1,62 @@
+{
+  "intro": "The trick is to start small. One agent, used properly for a week, beats five half-built ones. Here's a gentle month that fits around a full-time job.",
+  "saves": "This pace means about 30–60 minutes a week of setup, and by the end of the month the agents are giving you back more time than they take.",
+  "weeks": [
+    {
+      "week": "Week 1",
+      "title": "Choose and launch one agent",
+      "time": "About 1 hour, one evening",
+      "tasks": [
+        "Decide your platform using the comparison (module 07) and sign up with your business email.",
+        "Do the 10-minute privacy setup (module 06).",
+        "Build your first agent from a template. 'Business in 15 minutes' or 'Enquiry first replies' are good starters.",
+        "Run the test prompt and check it against 'what good looks like'.",
+        "Use it on demand for the rest of the week."
+      ]
+    },
+    {
+      "week": "Week 2",
+      "title": "Review and tweak",
+      "time": "About 30 minutes",
+      "tasks": [
+        "Read back what it produced. What did you change every time?",
+        "Add those changes to the instructions (edit the agent in My agents and re-copy).",
+        "If you're happy, switch it on to a schedule.",
+        "Jot down roughly how much time it saved."
+      ]
+    },
+    {
+      "week": "Week 3",
+      "title": "Add a second agent",
+      "time": "About 45 minutes",
+      "tasks": [
+        "Pick a different part of the business, e.g. the weekly content and follow-ups planner.",
+        "Build it, test it and use it on demand first.",
+        "Keep reading everything the first agent produces, just a quicker skim now."
+      ]
+    },
+    {
+      "week": "Week 4",
+      "title": "Settle in and decide",
+      "time": "About 30 minutes",
+      "tasks": [
+        "Review both agents: keep, tweak or switch off?",
+        "Check your platform costs against the time saved (the calculator in module 07).",
+        "Export a backup of My agents.",
+        "Choose your next idea from the gallery, or enjoy the evenings back."
+      ]
+    }
+  ],
+  "day30": "Day 30 check: Are you spending less time on busywork? Do you trust the drafts? Is anything going out that you haven't read? If it's yes, yes, no, you're doing it exactly right.",
+  "cheatSheet": {
+    "title": "Agents cheat sheet",
+    "sections": [
+      { "heading": "An agent is…", "lines": ["An AI you give a goal, not just a question.", "It plans, uses tools, checks, then hands back to you."] },
+      { "heading": "The six parts", "lines": ["Instructions: the briefing", "Tools: what it can use", "Knowledge: your reference folder", "Memory: what it remembers", "Trigger: what starts it", "Guardrails: your rules and approval"] },
+      { "heading": "Traffic lights", "lines": ["Green: just for me, so let it run", "Amber: client or public, so it drafts and I send", "Red: money, legal, health, complaints, earnings, so I do it"] },
+      { "heading": "Always check", "lines": ["Prices and availability: with the supplier", "Visa and entry rules: on GOV.UK (FCDO)", "Anything public: facts, offers, tone"] },
+      { "heading": "Never", "lines": ["Use NHS devices, accounts or NHS Copilot for the business", "Paste passports, health or card details into AI", "Make income claims or auto-send marketing"] },
+      { "heading": "When it goes wrong", "lines": ["Don't just fix the output; fix the instructions", "Pause the schedule if you're unsure", "Ask the AI: 'How do I…?'"] }
+    ]
+  }
+}

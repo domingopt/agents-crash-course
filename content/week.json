@@ -1,0 +1,28 @@
+{
+  "intro": "Before we talk technology, let's look at where the business actually fits into your week. Answer a few quick questions; your answers stay on this device and shape the examples later on.",
+  "illustrativeNote": "Illustrative only: these hours are rough estimates for planning, not a promise. Your own saving depends on the tasks you hand over and how much checking they need.",
+  "eveningsQuestion": "How many evenings a week do you usually spend on the business?",
+  "weekendQuestion": "And how much of the weekend?",
+  "weekendOptions": [
+    { "id": "none", "label": "Hardly any", "hours": 0 },
+    { "id": "morning", "label": "A morning or so", "hours": 3 },
+    { "id": "day", "label": "Most of a day", "hours": 6 },
+    { "id": "lots", "label": "Much of the weekend", "hours": 10 }
+  ],
+  "tasksQuestion": "Which of these take up your business time? Pick all that apply.",
+  "tasks": [
+    { "id": "enquiries", "label": "Replying to new enquiries", "hours": 2.5, "saving": 0.5, "colour": "coral", "how": "An agent drafts the first reply and pulls out the client's brief; you check and send." },
+    { "id": "quotes", "label": "Researching options and building quotes or itineraries", "hours": 3, "saving": 0.35, "colour": "teal", "how": "An agent produces a first-draft shortlist and itinerary; you check live prices and availability." },
+    { "id": "clientcomms", "label": "Pre-trip emails, documents and reminders", "hours": 1.5, "saving": 0.6, "colour": "sun", "how": "Countdown emails (documents, weather, packing) are drafted on a schedule for you to approve." },
+    { "id": "social", "label": "Planning and writing social posts", "hours": 2, "saving": 0.5, "colour": "coral", "how": "A weekly content plan with captions drafted from your offers and photos." },
+    { "id": "team", "label": "Following up leads and supporting my team", "hours": 2, "saving": 0.4, "colour": "teal", "how": "Reminders of who's due a follow-up, with draft messages in your voice that you send yourself." },
+    { "id": "admin", "label": "Inbox, receipts and admin", "hours": 1.5, "saving": 0.5, "colour": "sun", "how": "A Monday briefing and an inbox sort, so you only open what matters." },
+    { "id": "learning", "label": "Supplier training, promos and newsletters", "hours": 1, "saving": 0.4, "colour": "coral", "how": "A weekly digest of supplier emails: what's new, what's expiring, what's relevant to your clients." }
+  ],
+  "defaultTasks": ["enquiries", "quotes", "social", "team", "admin"],
+  "defaultEvenings": 4,
+  "defaultWeekend": "morning",
+  "hourlyValueDefault": 20,
+  "hourlyValueNote": "What's an hour of your time worth? We've assumed £20, roughly what a UK virtual assistant charges. Change it if you like.",
+  "afterMessage": "Agents don't make the business run itself. They take the first draft, the digging and the remembering off your plate, so your evenings are spent on the bits only you can do: the judgement, the relationships and the final yes."
+}

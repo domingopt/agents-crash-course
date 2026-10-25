@@ -1,0 +1,102 @@
+{
+  "intro": "This isn't meant to scare you. A handful of simple habits cover almost everything. Here they are in plain English.",
+  "saves": "Getting this right once means you never have to worry about it again, and it protects your NHS career, your clients and your business reputation.",
+  "disclaimer": "This is practical guidance, not legal advice. For anything specific, check with your host agency, your network marketing company's compliance team or the official sources linked.",
+  "nhs": {
+    "title": "Rule one: keep NHS and business completely separate",
+    "points": [
+      "Never use your work laptop, work phone, NHS email or NHS Microsoft account (including NHS Copilot) for the business. Not even 'just quickly'.",
+      "Never put patient information or any NHS data into any AI tool you use for the business.",
+      "Use a personal device and separate business accounts: a business email, and an AI subscription in your own name.",
+      "If you use Microsoft 365 at home, make sure you're signed in to your personal account, not your work one. The Outlook and Copilot apps make it easy to mix them up."
+    ],
+    "why": "NHS systems and data have strict rules, and mixing them with a private business could be a serious conduct issue. Keeping things separate also means your business keeps working if you change jobs."
+  },
+  "topics": [
+    {
+      "id": "clients",
+      "title": "Client data",
+      "icon": "person",
+      "summary": "Treat client details as if they were your own passport.",
+      "points": [
+        "Only give an AI tool what the job needs. 'Family of 4, kids 6 and 9, budget £4k' is plenty; it doesn't need surnames, addresses or dates of birth.",
+        "Never paste passport numbers, health or medical details, or card details into an AI tool.",
+        "Turn off 'use my chats to train the model' in your AI tool's privacy settings (both Claude and ChatGPT have this).",
+        "If you connect your inbox, remember the AI can read what's in it. Use a business-only inbox."
+      ],
+      "more": "Under [[UK GDPR|gdpr]] you're responsible for your clients' personal data. Using reputable tools, sharing the minimum and having a short privacy notice on your website covers most of what a small business needs. Your host agency may already provide a privacy notice for you to use.",
+      "links": [{ "label": "ICO: guidance for small businesses", "url": "https://ico.org.uk/for-organisations/advice-for-small-organisations/" }]
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing messages",
+      "icon": "megaphone",
+      "summary": "Agents draft. You send. And only to people who've said yes.",
+      "points": [
+        "Email marketing (newsletters, offers) generally needs people's consent, and an easy way to unsubscribe. That's [[PECR|pecr]].",
+        "Personal, one-to-one messages to people you know are different from bulk marketing, but stay genuine. No copy-and-paste blasts to your whole contact list.",
+        "Never let an agent send messages automatically to leads or prospects. It drafts; you decide who and when."
+      ],
+      "more": "The ICO has a clear guide to direct marketing. If in doubt: did this person ask to hear from you, and would they be surprised by the message? If they'd be surprised, don't send it.",
+      "links": [{ "label": "ICO: direct marketing guidance", "url": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/" }]
+    },
+    {
+      "id": "network",
+      "title": "Network marketing claims",
+      "icon": "scales",
+      "summary": "No income claims, no 'quit your job' promises. Ever.",
+      "points": [
+        "Don't post or send messages about how much you (or anyone) earn, or imply people will earn a certain amount.",
+        "Recruitment posts must be honest about what's involved: time, costs and that results vary.",
+        "Add a line to every network-marketing agent's instructions: 'Never mention income, earnings or financial results.'",
+        "Your network marketing company will have its own rules on social posts. Those apply to AI-written content too."
+      ],
+      "more": "Advertising rules ([[ASA / CAP Code|asa]]) apply to social posts that promote a business opportunity, and the [[Direct Selling Association|dsa]] code expects honest recruitment. AI tools tend to write in an upbeat, salesy way, so watch out for phrases like 'financial freedom' and 'life-changing income'.",
+      "links": [
+        { "label": "ASA: advertising rules (CAP Code)", "url": "https://www.asa.org.uk/codes-and-rulings/advertising-codes.html" },
+        { "label": "Direct Selling Association", "url": "https://dsa.org.uk/" }
+      ]
+    },
+    {
+      "id": "travel",
+      "title": "Travel facts",
+      "icon": "globe",
+      "summary": "Prices, availability, visas and entry rules: always check the real source.",
+      "points": [
+        "AI can invent hotels, get transfer times wrong and quote prices that are out of date or simply made up.",
+        "Visa, passport validity and entry rules change. Always check [[FCDO travel advice|fcdo]] on GOV.UK and the destination's official sources.",
+        "Treat every price from an AI as 'needs checking with the supplier'.",
+        "If you sell packages with flights, [[ATOL|atol]], [[ABTA|abta]] and your [[host agency|host]]'s own rules on wording and protection still apply. AI-drafted quotes must follow them too."
+      ],
+      "more": "A handy habit: ask the agent to end every client-facing draft with a 'please verify' list for you, covering prices, availability and entry requirements. You tick them off, then delete the list before sending.",
+      "links": [{ "label": "FCDO foreign travel advice (GOV.UK)", "url": "https://www.gov.uk/foreign-travel-advice" }]
+    }
+  ],
+  "traffic": {
+    "title": "The traffic-light rule",
+    "intro": "When you're deciding how much freedom to give an agent, use this:",
+    "lights": [
+      { "id": "green", "label": "Green: let it run", "body": "Output is just for you, and private. Summaries, digests, reminders, sorting your inbox, tidying receipts.", "examples": ["Monday briefing", "Supplier digest", "Who to follow up"] },
+      { "id": "amber", "label": "Amber: it drafts, you send", "body": "Anything going to a client, a team member or the public. Read it, fix it, then you press send.", "examples": ["Enquiry replies", "Social posts", "Countdown emails", "Itinerary drafts"] },
+      { "id": "red", "label": "Red: you do it", "body": "Money, legal and health matters, sensitive data, complaints, and anything about earnings.", "examples": ["Final prices", "Visa advice", "Complaints", "Passport details", "Income talk"] }
+    ]
+  },
+  "quizIntro": "Quick check: what light is each of these?",
+  "quiz": [
+    { "q": "An agent emails you a Friday summary of supplier promotions.", "a": "green", "why": "It's just for you. Let it run." },
+    { "q": "An agent drafts a reply to a couple asking about Santorini in May.", "a": "amber", "why": "It's going to a client, so read it, check facts, then send." },
+    { "q": "An agent tells a client their passport is fine for Turkey.", "a": "red", "why": "Entry requirements are your responsibility. Check GOV.UK and the client's circumstances yourself." },
+    { "q": "An agent writes a post saying 'I replaced my NHS salary in 6 months!'", "a": "red", "why": "That's an income claim. A firm no under advertising rules and the DSA code." }
+  ],
+  "privacyChecklist": {
+    "title": "Your 10-minute privacy setup",
+    "items": [
+      "Use a separate business email address, not your NHS one.",
+      "Sign up for your AI tool with that business email.",
+      "In the AI tool's settings, find Privacy or Data controls and switch off model training on your chats.",
+      "Connect only the accounts each agent needs.",
+      "Turn on two-step verification on your business email and AI accounts.",
+      "Once a month, review connected apps and remove any you no longer use."
+    ]
+  }
+}
