@@ -4,9 +4,9 @@ These notes are for you, the person running the session, not for the learner. Th
 
 ## Before the session
 
-- **Personalise.** In `content/site.json`, check `learnerName`, and fill in `businessDefaults` (agency name, host agency, network marketing company, sign-off) if you know them. Anything left blank she can fill in herself in the Agent Builder.
+- **Personalise.** The learner's name comes from the `LEARNER_NAME` repository variable (Settings → Secrets and variables → Actions → Variables). Fill in `businessDefaults` in `content/site.json` (agency name, host agency, network marketing company) if you know them; anything left blank she can fill in herself in the Agent Builder.
 - **Re-check prices.** Open module 07 and spot-check each platform's price against its own pricing page. Update `content/platforms.json` and `lastChecked` in both `platforms.json` and `site.json`.
-- **Fresh start.** On the device you'll present from, use "Reset progress for a fresh run-through" at the top of this page.
+- **Fresh start.** On the device you'll present from, use "Reset progress for a fresh run-through" at the top of this page. It keeps saved agents, so delete any test agents in My agents yourself.
 - **Her devices.** Open the site on her phone at the start so it's in her browser history. Her saved agents live on whichever device she builds them on, so suggest she builds on the laptop she'll use for the business.
 - **Print** two copies of the cheat sheet (footer → Cheat sheet → Print).
 - **Bring** a non-work laptop. Never demo on an NHS device.

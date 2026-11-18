@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useEffect, useState } from 'react';
+import { Component, lazy as reactLazy, Suspense, useCallback, useEffect, useState, type ReactNode } from 'react';
 import { LazyMotion, MotionConfig } from 'framer-motion';
 import { content } from './content';
 import { useRoute } from './lib/route';
@@ -6,6 +6,56 @@ import { GlossaryContext } from './lib/glossaryContext';
 import { Header } from './components/Header';
 import { GlossaryDrawer } from './components/GlossaryDrawer';
 import { Home } from './modules/Home';
+
+// After a redeploy, an open tab may ask for an old module file that no longer exists.
+// Reload once to pick up the new version instead of showing a blank page.
+const RELOAD_KEY = 'agents-course:chunk-reload';
+function lazy<T extends React.ComponentType<object>>(load: () => Promise<{ default: T }>) {
+  return reactLazy(() =>
+    load()
+      .then((mod) => {
+        try {
+          sessionStorage.removeItem(RELOAD_KEY);
+        } catch {
+          /* ignore */
+        }
+        return mod;
+      })
+      .catch((err) => {
+        let reloaded = false;
+        try {
+          reloaded = sessionStorage.getItem(RELOAD_KEY) === '1';
+          if (!reloaded) sessionStorage.setItem(RELOAD_KEY, '1');
+        } catch {
+          /* ignore */
+        }
+        if (!reloaded) window.location.reload();
+        throw err;
+      }),
+  );
+}
+
+class PageErrorBoundary extends Component<{ children: ReactNode; route: string }, { failed: boolean }> {
+  state = { failed: false };
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+  componentDidUpdate(prev: { route: string }) {
+    if (prev.route !== this.props.route && this.state.failed) this.setState({ failed: false });
+  }
+  render() {
+    if (!this.state.failed) return this.props.children;
+    return (
+      <div className="wrap" style={{ padding: '48px 16px' }}>
+        <h1>This page didn't load</h1>
+        <p>The site has probably just been updated. Reloading usually fixes it, and your progress and saved agents are kept.</p>
+        <button type="button" className="btn btn-primary" onClick={() => window.location.reload()}>
+          Reload the page
+        </button>
+      </div>
+    );
+  }
+}
 
 const loadFeatures = () => import('./lib/motionFeatures').then((r) => r.default);
 
@@ -47,9 +97,11 @@ export function App() {
         </a>
         <Header route={route} onGlossary={() => openGlossary()} />
         <main id="main" tabIndex={-1} style={{ outline: 'none' }}>
-          <Suspense fallback={<div className="wrap" style={{ padding: '48px 16px' }}>Loading…</div>}>
-            {Page ? <Page /> : <Home />}
-          </Suspense>
+          <PageErrorBoundary route={route}>
+            <Suspense fallback={<div className="wrap" style={{ padding: '48px 16px' }}>Loading…</div>}>
+              {Page ? <Page /> : <Home />}
+            </Suspense>
+          </PageErrorBoundary>
         </main>
         <footer className="site-footer">
           <div className="wrap">
