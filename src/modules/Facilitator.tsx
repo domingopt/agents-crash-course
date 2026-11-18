@@ -21,9 +21,9 @@ export default function Facilitator() {
           type="button"
           className="btn btn-ghost btn-small"
           onClick={() => {
-            if (window.confirm('Reset course progress and quiz answers on this device? Saved agents are kept.')) {
+            if (window.confirm('Reset progress, answers, platform choice and business details on this device? Saved agents in My agents are kept.')) {
               reset();
-              ['sorter', 'platform-answers', 'profile', 'plan-ticks', 'privacy-checklist', 'builder-draft', 'builder-step'].forEach(remove);
+              ['sorter', 'platform-answers', 'chosen-platform', 'business', 'profile', 'plan-ticks', 'privacy-checklist', 'builder-draft', 'builder-step'].forEach(remove);
               window.location.hash = '#/';
               window.location.reload();
             }
