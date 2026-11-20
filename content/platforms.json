@@ -1,7 +1,7 @@
 {
   "intro": "There's no single 'best' platform: there's the best fit for your email, budget and appetite for setting things up. Here are the five realistic options, plus two more technical alternatives, compared on the same criteria. Every option has real downsides, and they're listed.",
   "saves": "Choosing well up front saves you from rebuilding everything in three months. Choosing badly is recoverable too: your instructions are plain text and move with you.",
-  "lastChecked": "25 October 2026",
+  "lastChecked": "20 November 2026",
   "methodNote": "Prices and features change often, sometimes monthly. We checked the vendors' own pages where we could reach them and reputable reviews where we couldn't, and noted where sources disagreed. Always confirm the price at checkout before you subscribe.",
   "fxNote": "Several platforms charge in US dollars or euros. Pound figures are approximate, converted at roughly £0.75 to the dollar and £0.86 to the euro, and VAT may be added at checkout.",
   "connectLabels": {
@@ -115,7 +115,7 @@
       "tier": "main",
       "kind": "AI in Office apps",
       "oneLiner": "Copilot built into Word, Excel and Outlook on a personal Microsoft 365 subscription. Helpful for writing, but not really an agent platform.",
-      "cost": { "label": "About £8.49 a month", "low": 8.5, "high": 8.5, "free": "Free Copilot app with basic features", "note": "£8.49/month or £84.99/year as reported by Which? (July 2025); not re-confirmed. Includes Office apps and storage. Copilot use is limited by monthly AI credits." },
+      "cost": { "label": "About £8.49 a month", "low": 8.5, "high": 8.5, "free": "Free Copilot app with basic features", "note": "£8.49/month or £84.99/year on Microsoft's UK pricing page (checked November 2026). Includes Office apps and storage. Copilot use is limited by monthly AI credits." },
       "setup": 1,
       "setupText": "Very low if you already have Microsoft 365.",
       "ongoing": 3,
@@ -145,6 +145,7 @@
       ],
       "warning": "Never use your NHS Microsoft account, work device or NHS Copilot for the business.",
       "sources": [
+        { "label": "Microsoft: compare Microsoft 365 plans (UK)", "url": "https://www.microsoft.com/en-gb/microsoft-365/buy/compare-all-microsoft-365-products" },
         { "label": "Which?: Microsoft 365 price rises", "url": "https://www.which.co.uk/news/article/how-to-avoid-microsoft-365-price-rises-aGNYY5O92as9" },
         { "label": "Licensing School: Copilot in Personal and Family", "url": "https://www.licensingschool.co.uk/licensing-blog/?p=120733" }
       ]
@@ -198,7 +199,7 @@
       "tier": "main",
       "kind": "Dedicated agent builder",
       "oneLiner": "A dedicated 'AI assistant' builder, designed for hands-off agents that handle your inbox, meetings and follow-ups.",
-      "cost": { "label": "About £23–38 a month", "low": 23, "high": 38, "free": "No free plan; 7-day free trial", "note": "Sources in 2026 disagree: US$29.99 (newer) or US$49.99 (older) for the entry plan, with monthly credits." },
+      "cost": { "label": "About £23 a month", "low": 23, "high": 23, "free": "No free plan; 7-day free trial", "note": "US$29.99 a month per user for the Plus plan with 3,000 credits; no yearly discount published. Older 2026 reviews quoted US$49.99, from before Lindy relaunched its plans." },
       "setup": 3,
       "setupText": "Medium: templates help, but there are lots of settings.",
       "ongoing": 3,
@@ -221,14 +222,15 @@
         "Works with Gmail and Outlook"
       ],
       "cons": [
-        "Prices changed during 2026 and sources disagree",
+        "Prices changed during 2026, so older reviews quote different figures",
         "Reviewers report credits running out quickly",
         "Customer reviews complain about support",
         "Smaller company: more risk of big changes or closure",
         "No free plan"
       ],
       "sources": [
-        { "label": "Layer3Labs: Lindy pricing (Sep 2026)", "url": "https://www.layer3labs.io/guides/lindy-ai-pricing" },
+        { "label": "Layer3Labs: Lindy pricing (Nov 2026)", "url": "https://www.layer3labs.io/guides/lindy-ai-pricing" },
+        { "label": "AutomateReal: Lindy pricing (Nov 2026)", "url": "https://automatereal.com/blog/lindy-ai/" },
         { "label": "CloudTalk: Lindy pricing (Apr 2026)", "url": "https://www.cloudtalk.io/blog/lindy-ai-pricing/" },
         { "label": "Usecarly: Lindy review", "url": "https://www.usecarly.com/blog/lindy-ai-review/" }
       ]
@@ -240,7 +242,7 @@
       "tier": "alternative",
       "kind": "Visual automation",
       "oneLiner": "A visual automation tool: you draw your workflow as a map of connected bubbles. Cheaper than Zapier, with AI Agents in beta.",
-      "cost": { "label": "Free tier; paid from about £7–9 a month", "low": 0, "high": 15, "free": "Free plan with 1,000 credits a month", "note": "Core about US$9–12 a month depending on billing. AI steps use extra credits. Sources disagree slightly." },
+      "cost": { "label": "Free tier; paid from about £9–12 a month", "low": 0, "high": 15, "free": "Free plan with 1,000 credits a month", "note": "Core about US$12 a month billed yearly or US$16 billed monthly, for 10,000 credits. AI steps use extra credits. Some reviews still quote US$9." },
       "setup": 4,
       "setupText": "Higher: powerful, but a real learning curve.",
       "ongoing": 3,
@@ -261,7 +263,8 @@
       "cons": ["Steeper learning curve than Zapier", "AI Agents still in beta; pricing may change", "Credit maths can be confusing"],
       "sources": [
         { "label": "Eesel: Make review 2026", "url": "https://www.eesel.ai/blog/make-review" },
-        { "label": "Latenode: Make pricing (Sep 2026)", "url": "https://latenode.com/blog/make-com-pricing" }
+        { "label": "Latenode: Make pricing (Oct 2026)", "url": "https://latenode.com/blog/make-com-pricing" },
+        { "label": "Activepieces: Make pricing (Nov 2026)", "url": "https://www.activepieces.com/blog/makecom-pricing-2026-plans-credits-and-real-costs" }
       ]
     },
     {
@@ -313,8 +316,8 @@
         "id": "budget",
         "q": "What's a comfortable monthly budget?",
         "options": [
-          { "id": "b10", "label": "Up to £10", "scores": { "claude": -2, "chatgpt": -2, "copilot": 2, "zapier": 1, "lindy": -3, "make": 1, "n8n": -3 }, "reasons": { "claude": "About £15–18, over this budget", "chatgpt": "About £20, over this budget", "copilot": "Fits the budget", "zapier": "Free tier could do to start", "lindy": "Well over this budget", "make": "Free or about £8", "n8n": "Over this budget" } },
-          { "id": "b25", "label": "Up to £25", "scores": { "claude": 2, "chatgpt": 2, "copilot": 1, "zapier": 1, "lindy": -1, "make": 2, "n8n": 1 }, "reasons": { "claude": "Fits the budget", "chatgpt": "Fits the budget", "zapier": "Free or entry plan fits; Agents Pro wouldn't", "lindy": "Only the cheapest plan, if currently ~£23", "make": "Fits easily" } },
+          { "id": "b10", "label": "Up to £10", "scores": { "claude": -2, "chatgpt": -2, "copilot": 2, "zapier": 1, "lindy": -3, "make": 1, "n8n": -3 }, "reasons": { "claude": "About £15–18, over this budget", "chatgpt": "About £20, over this budget", "copilot": "Fits the budget", "zapier": "Free tier could do to start", "lindy": "Well over this budget", "make": "Free, or about £9–12 paid", "n8n": "Over this budget" } },
+          { "id": "b25", "label": "Up to £25", "scores": { "claude": 2, "chatgpt": 2, "copilot": 1, "zapier": 1, "lindy": -1, "make": 2, "n8n": 1 }, "reasons": { "claude": "Fits the budget", "chatgpt": "Fits the budget", "zapier": "Free or entry plan fits; Agents Pro wouldn't", "lindy": "Only the entry plan, about £23", "make": "Fits easily" } },
           { "id": "b50", "label": "Up to £50", "scores": { "claude": 2, "chatgpt": 2, "copilot": 1, "zapier": 2, "lindy": 1, "make": 2, "n8n": 2 }, "reasons": { "claude": "Fits, with room for another tool", "chatgpt": "Fits the budget", "zapier": "Fits most plans", "lindy": "Entry plan fits" } },
           { "id": "bany", "label": "Whatever saves the most time", "scores": { "zapier": 1, "lindy": 1 }, "reasons": {} }
         ]
